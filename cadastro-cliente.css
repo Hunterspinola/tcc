@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+  }
+  
+  
+  section {
+    padding: 2rem 9%;
+  }
+  
+  body *{
+    box-sizing: border-box;
+  }
+  
+  /*---------------INICIO MENU------------*/
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  }
+  
+  header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+  }
+  
+  
+  header .logo span {
+    color: var(--roxo);
+  }
+  
+  
+  header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #1b0c1a;
+  }
+  
+  
+  header .navbar a:hover {
+    color: var(--roxo);
+  }
+  
+  
+  header .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+  }
+  
+  
+  header .icons a:hover {
+    color: var(--roxo);
+  }
+  
+  
+  header #risquinhos {
+    display: none;
+  }
+  
+  
+  header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /*---------------FIM MENU------------*/
+  
+  /* ------------ INICIO LOGIN QUESTIONS ------------------ */
+  .main-login{
+    width: 100vw;
+    height: 100vh;
+    background:   #E6D4E0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .left-login >h1{
+    font-size: 3rem;
+    color: #290A27;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .left-login-imagem{
+    width: 35vw;
+  }
+  .right-login{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #441F42;
+    border-radius: 20px;
+    box-shadow: 0px -10px 150px #b957b4;
+  }
+  .card-login >h1{
+  color: #E6D4E0;
+  font-size: 4rem;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .text{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+  }
+  .text > input{
+    width: 100%;
+    border:none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #6D326A;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline:none;
+    box-sizing: border-box;
+    color: #E6D4E0;
+  }
+  .text > label{
+    color: #E6D4E0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+  }
+  .text > input ::placeholder{
+    color: #dfc9d85b;
+    margin-bottom: 10px;
+  }
+  /* ------------ FIM LOGIN QUESTIONS ------------------ */
+  
+  /* ------------ INICIO BOTÃO ------------------ */
+  .btn{
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #290A27;
+  background: #E6D4E0;
+  box-shadow: 0px 10px 40px -12px #b957b4;
+  cursor: pointer;
+  }
+  
+  a{
+    text-decoration: none;
+    font-size: 12pt;
+    color: #9c4c98;
+  }
+  /* ------------ FIM BOTÃO ------------------ */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*Midia quer*/
+  @media(max-width:950px) {
+  .card-login{
+    width: 85%;
+  }
+  }
+  
+  @media(max-width: 600px) {
+    .main-login{
+      flex-direction: column;
+    }
+    .left-login > h1{
+      display: none;
+    }
+    .left-login{
+      width: 100%;
+      height: auto;
+    }
+    .right-login{
+      width: 100%;
+      height: auto;
+    }
+    .left-login-imagem{
+      width: 50vw;
+    }
+    .card-login{
+      width: 90vw;
+    }
+  }
+  
