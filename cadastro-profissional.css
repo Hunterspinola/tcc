@@ -184,7 +184,7 @@ text-transform: uppercase;
 font-weight: 800;
 letter-spacing: 3px;
 color: #290A27;
-background-color: #E6D4E0;
+background: #E6D4E0;
 box-shadow: 0px 10px 40px -12px #b957b4;
 cursor: pointer;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -195,7 +195,6 @@ a{
   font-size: 12pt;
   color: #9c4c98;
 }
-
 /* ------------ FIM BOTÃO ------------------ */
 
 
