@@ -32,43 +32,79 @@
 </header>
 <!-- -------------------------FIM MENU-------------------- -->
 
-<!-- -------------------------INICIO LOGIN-------------------- -->
-  <div class="main-login">
-    <div class="left-login">
-      <h1>Caso ainda não tenha conta, cadastre-se aqui!</h1>
-      <img src="pessoaloping.svg" class="left-login-imagem" alt="pessoaloping">
-    </div> 
+<!-- --------------------------------------------- -->
 
-    <div class="right-login">
-      <div class="card-login">
-        <h1>Cadastro</h1>
-
-        <div class="text">
-          <label for="nome">Nome completo</label>
-          <input type="text" name="nome" placeholder="Nome">
+  <div class="left-cadastro">
+    <h1>Caso ainda não tenha conta, cadastre-se aqui!</h1>
+    <img src="pessoaloping.svg" class="left-cadastro-imagem" alt="pessoaloping">
+  </div> 
+<div class="container">
+        
+        <div class="form">
+          <form action="#">
+            <div class="form-header">
+              <div class="title">
+                <h1>Cadastre-se</h1>
+              </div>
+              <div class="buton-entrar">
+                <button><a href="#">Entrar</a></button>
+              </div>
+            </div>
+<!-- -------------------------INICIO CADASTRO QUESTIONS-------------------- -->
+            <div class="input-gruop">
+              <div class="input-box">
+                <label for="primeironome">Primeiro nome</label>
+                <input type="primeironome" id="primeironome" name="primeironome" placeholder="Digite seu primeironome" required>
+              </div>
+              <div class="input-box">
+                <label for="sobrenome">Sobrenome</label>
+                <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+              </div>
+              <div class="input-box">
+                <label for="usuario">Nome de usuário</label>
+                <input id="usuario" type="text" name="usuario" placeholder="Crie um nome de usuário" required>
+              </div>
+              <div class="input-box">
+                <label for="celular">Celular</label>
+                <input id="celular" type="tel" name="celular" placeholder="(xx) xxxx-xxxx" required>
+              </div>
+              <div class="input-box">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+              </div>
+              <div class="input-box">
+                <label for="cpf">CPF</label>
+                <input id="cpf" type="number" name="cpf" placeholder="Digite seu CPF apenas com números" required>
+              </div>
+              <div class="input-box">
+                <label for="senha">Senha</label>
+                <input id="senha" type="password" name="senha" placeholder="Crie uma senha" required>
+              </div>
+              <div class="input-box">
+                <label for="confirmasenha">Confirme sua senha</label>
+                <input id="confirmasenha" type="password" name="confirmasenha" placeholder="Senha" required>
+              </div>
+              <div class="input-box">
+                <h3>Selecione uma área</h3>
+                <select name="ramo" id="ramo">
+                  <option value="nulo">---</option>
+                  <option value="reparos">Reparos</option>
+                  <option value="construcao">Construção</option>
+                  <option value="tecnologia">Tecnologia</option>
+                  <option value="limpeza">Limpeza</option>
+                  <option value="mecanica">Mecânica</option>
+                  <option value="reparos">Culinária</option>
+                  <option value="beleza">Beleza</option>
+                </select>
+              </div>
+            </div>
+            <!-- -------------------------FIM CADASTRO QUESTIONS-------------------- -->
+            <div class="cadastro-buton">
+              <button><a href="#">Cadastrar-se</a></button>
+            </div>
+          </form>
         </div>
-
-        <div class="text">
-            <label for="usuario">Nome de usuario</label>
-            <input type="text" name="usuario" placeholder="usuario">
-          </div>
-
-        <div class="text">
-            <label for="email">Seu email</label>
-            <input type="email" name="email" placeholder="email">
-          </div>
-
-        <div class="text">
-          <label for="senha">Crie uma senha</label>
-          <input type="password" name="senha" placeholder="senha">
-        </div>
-
-        <a href="#" class="btn" align="center" >CADASTRAR</a>
-        <a href="login.html">Já tenho conta</a>
       </div>
-    </div>
-  </div>
-
-  <!-- -------------------------FIM LOGIN-------------------- -->
+  
 </body>
 </html>

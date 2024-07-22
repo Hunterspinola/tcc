@@ -19,10 +19,16 @@ section {
   padding: 2rem 9%;
 }
 
-body *{
-  box-sizing: border-box;
-}
 
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E6D4E0;
+}
 /*---------------INICIO MENU------------*/
 
 header {
@@ -91,16 +97,9 @@ header .fa-bars {
 
 /*---------------FIM MENU------------*/
 
-/* ------------ INICIO LOGIN QUESTIONS ------------------ */
-.main-login{
-  width: 100vw;
-  height: 100vh;
-  background:   #E6D4E0; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.left-login{
+
+/* ------------ INICIO IMAGEM CADASTRO ------------------ */
+.left-cadastro{
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -108,68 +107,26 @@ header .fa-bars {
   align-items: center;
   flex-direction: column;
 }
-.left-login >h1{
+.left-cadastro >h1{
   font-size: 3rem;
   color: #290A27;
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.left-login-imagem{
+.left-cadastro-imagem{
   width: 35vw;
 }
-.right-login{
-width: 50vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.card-login{
-  width: 60%;
+
+/* ------------ FIM IMAGEM CADASTRO------------------ */
+
+/* ------------ INICIO CADASTRO QUESTIONS ------------------ */
+
+.container{
+  width: 50%;
+  height: 50vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px 35px;
   background: #441F42;
-  border-radius: 20px;
   box-shadow: 0px -10px 150px #b957b4;
-}
-.card-login >h1{
-color: #E6D4E0;
-font-size: 4rem;
-margin: 0;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.text{
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: 5%;
-  width: 100%;
-}
-.text > input{
-  width: 100%;
-  border:none;
-  border-radius: 10px;
-  padding: 15px;
-  background: #6D326A;
-  font-size: 12pt;
-  box-shadow: 0px 10px 40px #00000056;
-  outline:none;
-  box-sizing: border-box;
-  color: #E6D4E0;
-}
-.text > label{
-  color: #E6D4E0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-}
-.text > input ::placeholder{
-  color: #dfc9d85b;
-  margin-bottom: 10px;
 }
 /* ------------ FIM LOGIN QUESTIONS ------------------ */
 
