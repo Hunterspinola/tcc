@@ -1,2 +1,2 @@
 Atualizações:
-  Anthony: criei parcialmente o banco de dados, dei o nome de Agama como o do Site. A tabela serviço foi criada, porém não consigo criar as demais tabelas devido à problemas no esquama do banco (vou pedir a aula 06 da Paulete). Criei tbm o includes/conexao.php e já fiz o código da conexão com o banco.
+  Anthony - Acabo de fazer o cadastro-clienteExe.php, deixei alguns comentários explicando melhor. No cadastro-cliente.html a única coisa que fiz foi colocar o method post e colocar o action="cadastro-clienteExe.php" no form.
