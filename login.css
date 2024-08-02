@@ -76,7 +76,7 @@ header .icons a:hover {
 
 
 header #risquinhos {
-  display: none;
+    display: none;
 }
 
 
@@ -87,6 +87,7 @@ header .fa-bars {
   padding: .5rem 1.5rem;
   cursor: pointer;
   display: none;
+  
 }
 
 /*---------------FIM MENU------------*/
@@ -171,6 +172,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .text-box > input ::placeholder{
   color: #E6D4E0;
 }
+h1{
+  padding-left: 10px;
+}
 /* ------------ FIM LOGIN QUESTIONS ------------------ */
 
 /* ------------ INICIO BOTÃO ------------------ */
@@ -197,79 +201,105 @@ a{
 }
 
 /* ------------ FIM BOTÃO ------------------ */
+/*CABEÇALHO*/
+@media(max-width:991px) {
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Midia quer*/
-@media(max-width:950px) {
-.card-login{
-  width: 85%;
-}
-}
-
-@media(max-width: 600px) {
-  .main-login{
-    flex-direction: column;
+  html {
+      font-size: 55%;
   }
-  .left-login > h1{
-    display: none;
+
+
+  header {
+      padding: 2rem;
+  }
+
+  section {
+      padding: 2rem;
+  }
+
+  .home {
+      background-position: left;
+  }
+}
+
+@media(max-width:768px) {
+
+
+  header .fa-bars {
+      display: block;
+  }
+
+
+  header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #eee;
+      border-top: .1rem solid rgba(0, 0, 0, .1);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+
+  header #risquinhos:checked~.navbar {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+
+  header .navbar a {
+      margin: 1.5rem;
+      padding: 1.5rem;
+      background: #fff;
+      border: .1rem solid rgba(0, 0, 0, .1);
+      display: block;
+  }
+
+  .home .content h3 {
+      font-size: 5rem;
+  }
+
+  .home .content span {
+      font-size: 2.5rem;
+  }
+
+  .iconis-conteiner .iconis h3{
+      font-size: 2.5rem;
+     
+  }
+  
+  .iconis-conteiner .iconis span{
+      color: #6d3c52;
+      font-size: 1.7rem;
+  }
+  .main-login{
+    width: 100vw;
+    height: 100vh;
+    background:   #E6D4E0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .left-login{
-    width: 100%;
-    height: auto;
-  }
-  .right-login{
-    width: 100%;
-    height: auto;
-  }
-  .left-login-imagem{
     width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  .card-login{
-    width: 90vw;
+}
+
+
+@media(max-width:450px) {
+
+
+  html {
+ 
   }
+
+  .heading {
+      font-size: 3rem;
+  }
+
 }

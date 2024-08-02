@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="login.css">
-  <title>login</title>
-</head>
-<body>
- <!--------------------------------INICIO MENU-------------------->
- <header>
-  <input type="checkbox" name="" id="risquinhos">
-  <label for="risquinhos" class="fas fa-bars"></label>
-  <a href="#" class="logo">AGAMA<span>.</span></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+    <title>login</title>
+  </head>
+  <body>
+    <!--------------------------------INICIO MENU-------------------->
+    <header>
+      <input type="checkbox" name="" id="risquinhos">
+        <label for="risquinhos" class="fas fa-bars"></label>
+        <a href="#" class="logo">AGAMA<span>.</span></a>
 
-
-  <nav class="navbar">
-      <a href="primeirapag.html">Home</a>
-      <a href="cadastro.html">Criar conta</a>
+      <nav class="navbar">
+        <a href="primeirapag.html">Home</a>
+        <a href="cadastro.html">Criar conta</a>
+      </nav>
       
-      
-  </nav>
 
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+      </div>
+    </header>
+    <!-- -------------------------FIM MENU-------------------- -->
 
-  <div class="icons">
-      <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-shopping-cart"></a>
-      <a href="login.html" class="fas fa-user"></a>
+    <!-- -------------------------INICIO LOGIN-------------------- -->
+    <div class="main-login">
+      <div class="left-login">
+        <h1>Faça o login para se conectar com a gente</h1>
+        <img
+          src="pessoaloping.svg"
+          class="left-login-imagem"
+          alt="pessoaloping"
+        />
+      </div>
 
+      <div class="right-login">
+        <div class="card-login">
+          <h1>Login</h1>
 
-  </div>
-</header>
-<!-- -------------------------FIM MENU-------------------- -->
+          <div class="text-box">
+            <label for="usuario">Nome de usuario</label>
+            <input
+              id="usuario"
+              type="text"
+              name="usuario"
+              placeholder="usuario"
+              required
+            />
+          </div>
 
-<!-- -------------------------INICIO LOGIN-------------------- -->
-  <div class="main-login">
-    <div class="left-login">
-      <h1>Faça o login para se conectar com a gente</h1>
-      <img src="pessoaloping.svg" class="left-login-imagem" alt="pessoaloping">
-    </div> 
+          <div class="text-box">
+            <label for="senha">Sua senha</label>
+            <input
+              id="senha"
+              type="password"
+              name="senha"
+              placeholder="senha"
+              required
+            />
+          </div>
 
-    <div class="right-login">
-      <div class="card-login">
-        <h1>Login</h1>
-
-        <div class="text-box">
-          <label for="usuario">Nome de usuario</label>
-          <input id="usuario" type="text" name="usuario" placeholder="usuario" required>
+          <a href="#" class="btn" align="center">LOGIN</a>
+          <a href="cadastro.html" class="criar">Criar conta</a>
         </div>
-
-        <div class="text-box">
-          <label for="senha">Sua senha</label>
-          <input id="senha" type="password" name="senha" placeholder="senha" required>
-        </div>
-
-        <a href="#" class="btn" align="center" >LOGIN</a>
-        <a href="cadastro.html" class="criar">Criar conta</a>
       </div>
     </div>
-  </div>
 
-  <!-- -------------------------FIM LOGIN-------------------- -->
-</body>
+    <!-- -------------------------FIM LOGIN-------------------- -->
+  </body>
 </html>
