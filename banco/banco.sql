@@ -11,5 +11,5 @@ create table if not exists Serviço (
     categoria			varchar(100) not null,
     preco				double not null,
     descricao			text not null,
-    foto				blob not null
+    foto				blob not null -- não sabia como fazer isso de colocar foto no banco, pesquisei e achei o tipo de variável BLOB.
 );
