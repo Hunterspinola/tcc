@@ -127,7 +127,7 @@ justify-content: center;
 align-items: center;
 }
 .card-login{
-  width: 60%;
+  width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,104 +202,79 @@ a{
 
 /* ------------ FIM BOTÃO ------------------ */
 /*CABEÇALHO*/
-@media(max-width:991px) {
-
-
+@media (max-width: 992px) {
   html {
-      font-size: 55%;
+    font-size: 55%;
   }
 
-
   header {
-      padding: 2rem;
+    padding: 2rem;
   }
 
   section {
-      padding: 2rem;
+    padding: 2rem;
   }
 
-  .home {
-      background-position: left;
+  .main-login {
+    flex-direction: column;
+    padding: 1rem;
   }
+
+  .card-login {
+    width: 350px;
+  }
+
+  .titulo {
+    margin-top: 70px;
+  }
+  .right-login{
+    width: 70%;
+  }
+ 
 }
 
-@media(max-width:768px) {
-
-
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
   header .fa-bars {
-      display: block;
+    display: block;
   }
-
 
   header .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: #eee;
-      border-top: .1rem solid rgba(0, 0, 0, .1);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
-
-  header #risquinhos:checked~.navbar {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  header #risquinhos:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-
 
   header .navbar a {
-      margin: 1.5rem;
-      padding: 1.5rem;
-      background: #fff;
-      border: .1rem solid rgba(0, 0, 0, .1);
-      display: block;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
   }
 
-  .home .content h3 {
-      font-size: 5rem;
-  }
-
-  .home .content span {
-      font-size: 2.5rem;
-  }
-
-  .iconis-conteiner .iconis h3{
-      font-size: 2.5rem;
-     
+  .titulo{
+    padding-top: 20px;
   }
   
-  .iconis-conteiner .iconis span{
-      color: #6d3c52;
-      font-size: 1.7rem;
-  }
-  .main-login{
-    width: 100vw;
-    height: 100vh;
-    background:   #E6D4E0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .left-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+
 }
 
-
-@media(max-width:450px) {
-
-
-  html {
- 
+/* Para telas menores que 450px */
+@media (max-width: 450px) {
+  .titulo{
+    padding-top: 70px;
   }
-
-  .heading {
-      font-size: 3rem;
-  }
+ .right-login{
+  width: 250px;
+ }
 
 }

@@ -254,7 +254,82 @@ color: #E6D4E0;
   color: #E6D4E0;
 }
 /* ------------ FIM BOTÃO ------------------ */
+@media (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
 
+  header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  .main-login {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .card-login {
+    width: 350px;
+  }
+
+  .titulo {
+    margin-top: 70px;
+  }
+  .right-login{
+    width: 70%;
+  }
+ 
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #risquinhos:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+
+  .titulo{
+    padding-top: 20px;
+  }
+  
+
+}
+
+/* Para telas menores que 450px */
+@media (max-width: 450px) {
+  .titulo{
+    padding-top: 70px;
+  }
+ .right-login{
+  width: 250px;
+ }
+
+}
   
   
   
