@@ -22,17 +22,15 @@ create table if not exists Cliente (
 );
 -- Cria a tabela Profissional caso não exista
 create table if not exists Profissional (
-	id_prof				int auto_increment primary key,
-    nome_prof			varchar(100) not null,
-    email				varchar(200) not null,
-    senha				varchar(100) not null,
-    cidade 				varchar(100),
-    bairro				varchar(100),
-    rua					varchar(100),
-    numero				tinyint,
-    cep					varchar(9) not null,
-    cnpj				varchar(14) not null
-    
+  id_prof				INT AUTO_INCREMENT PRIMARY KEY,
+  primeironome 			VARCHAR(100) NOT NULL,
+  sobrenome 			VARCHAR(100) NOT NULL,
+  usuario 				VARCHAR(100) NOT NULL UNIQUE,
+  celular 				VARCHAR(15) NOT NULL,
+  email 				VARCHAR(100) NOT NULL UNIQUE,
+  cnpj 					VARCHAR(20) NOT NULL,
+  senha 				VARCHAR(255) NOT NULL,
+  ramo 					VARCHAR(50) NOT NULL
 );
 -- Cria a tabela Serviço caso não exista
 create table if not exists Servico (
