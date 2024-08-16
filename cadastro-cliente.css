@@ -316,6 +316,9 @@ color: #E6D4E0;
   .titulo{
     padding-top: 20px;
   }
+  body{
+    flex-direction: column
+  }
   
 
 }

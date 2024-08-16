@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,38 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
   <title>cadastro</title>
 </head>
+
 <body>
- <!----------------------------------------------------------------INICIO MENU--------------------------------------------------------------------->
- <header>
-  <input type="checkbox" name="" id="risquinhos">
-  <label for="risquinhos" class="fas fa-bars"></label>
-  <a href="#" class="logo">AGAMA<span>.</span></a>
+  <!----------------------------------------------------------------INICIO MENU--------------------------------------------------------------------->
+  <header>
+    <input type="checkbox" name="" id="risquinhos">
+    <label for="risquinhos" class="fas fa-bars"></label>
+    <a href="#" class="logo">AGAMA<span>.</span></a>
 
-  <nav class="navbar">
-    <a href="cadastro.html">Voltar</a>
-      <a href="primeirapag.html">Home</a>  
-  </nav>
+    <nav class="navbar">
+      <a href="cadastro.html">Voltar</a>
+      <a href="primeirapag.html">Home</a>
+    </nav>
 
-  <div class="icons">
+    <div class="icons">
       <a href="#" class="fas fa-heart"></a>
       <a href="#" class="fas fa-shopping-cart"></a>
       <a href="login.html" class="fas fa-user"></a>
-  </div>
-</header>
-<!-- ----------------------------------------------------------FIM MENU--------------------------------------------------------------------------- -->
+    </div>
+  </header>
+  <!-- ----------------------------------------------------------FIM MENU--------------------------------------------------------------------------- -->
 
-<!-- ------------------------------------------------------INICIO CADASTRO------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------INICIO CADASTRO------------------------------------------------------------------------ -->
 
-<div class="left-cadastro">
-  <h1>Caso ainda não tenha conta, cadastre-se aqui!</h1>
-  <img src="pessoaloping.svg" class="left-cadastro-imagem" alt="pessoaloping">
-</div> 
-<div class="container">
-      
+    <div class="left-cadastro">
+      <h1>Caso ainda não tenha conta, cadastre-se aqui!</h1>
+      <img src="pessoaloping.svg" class="left-cadastro-imagem" alt="pessoaloping">
+    </div>
+    <div class="container">
+
       <div class="form">
-        <form action="cadastro-clienteExe.php" method="post" > <!--action que leva para a pág que faz o cad no banco atráves do method POST-->
+        <form action="cadastro-clienteExe.php" method="post">
+          <!--action que leva para a pág que faz o cad no banco atráves do method POST-->
           <div class="form-header">
             <div class="title">
               <h1>Cadastre-se</h1>
@@ -45,12 +48,13 @@
               <a href="login.html">Já tenho cadastro</a>
             </div>
           </div>
-<!-- --------------------------------------------------INICIO CADASTRO QUESTIONS------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------INICIO CADASTRO QUESTIONS------------------------------------------------------------------- -->
 
           <div class="input-gruop">
             <div class="input-box">
               <label for="primeironome">Primeiro nome</label>
-              <input type="primeironome" id="primeironome" name="primeironome" placeholder="Digite seu primeironome" required>
+              <input type="primeironome" id="primeironome" name="primeironome" placeholder="Digite seu primeironome"
+                required>
             </div>
             <div class="input-box">
               <label for="sobrenome">Sobrenome</label>
@@ -77,13 +81,15 @@
               <input id="confirmasenha" type="password" name="confirmasenha" placeholder="Senha" required>
             </div>
           </div>
-  <!-- --------------------------------------------------FIM CADASTRO QUESTIONS------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------FIM CADASTRO QUESTIONS------------------------------------------------------------------- -->
           <div class="cadastro-buton">
             <button><a href="#">Cadastrar-se</a></button>
           </div><br>
         </form>
       </div>
-     </div>
-   <!-- ------------------------------------------------------FIM CADASTRO------------------------------------------------------------------------ -->
+    </div>
+ 
+  <!-- ------------------------------------------------------FIM CADASTRO------------------------------------------------------------------------ -->
 </body>
+
 </html>

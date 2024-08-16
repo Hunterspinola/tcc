@@ -201,10 +201,14 @@ a{
 }
 
 /* ------------ FIM BOTÃO ------------------ */
+
+ 
+
 /*CABEÇALHO*/
-@media (max-width: 992px) {
+@media (max-width: 1367px) {
   html {
     font-size: 55%;
+    
   }
 
   header {
@@ -226,9 +230,16 @@ a{
 
   .titulo {
     margin-top: 70px;
+    font-size: 15px;
+    padding-top: 0;
   }
   .right-login{
     width: 70%;
+  }
+  .left-login{
+    font-size: 10px;
+    width: 100%;
+   
   }
  
 }
@@ -262,7 +273,7 @@ a{
   }
 
   .titulo{
-    padding-top: 20px;
+    padding-top: 0px;
   }
   
 
@@ -271,7 +282,7 @@ a{
 /* Para telas menores que 450px */
 @media (max-width: 450px) {
   .titulo{
-    padding-top: 70px;
+    padding-top: 35px;
   }
  .right-login{
   width: 250px;
