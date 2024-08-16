@@ -7,11 +7,10 @@
 </head>
 <body>
     <?php
-      //Faz a conexão
+      // Faz a conexão
       include('includes/conexao.php');
-      //Pega as variáveis do forms e as coloca no banco.
-      //Por enquanto, sem o banco totalmente criado, não dá pra fazer muito.
-      //Essas variáveis são temporárias, apenas para facilitar dps.
+
+      // Pega as variáveis do formulário e as coloca no banco
       $primeironome = $_POST['primeironome'];
       $sobrenome = $_POST['sobrenome'];
       $usuario = $_POST['usuario'];
@@ -20,7 +19,7 @@
       $senha = $_POST['senha'];
       $confirmasenha = $_POST['confirmasenha'];
 
-      //Mostra os dados coletados
+      // Mostra os dados coletados
       echo "<h1>Dados do Cliente</h1>";
       echo "Nome: $primeironome<br>";
       echo "Sobrenome: $sobrenome<br>";
@@ -30,25 +29,24 @@
       echo "Senha: $senha<br>";
       echo "Confirmar senha: $confirmasenha<br>";
 
-      //Insere em cliente 😏
-      $sql = "INSERT INTO Cliente (nome, sobrenome, usuario, celular, email, senha, confirmarsenha";
-      $sql .= "VALUES ('".$primeironome."','".$sobrenome."','".$usuario."','".$celular."','".$email."','".$senha."','".$confirmasenha."')";
-      echo $sql;
+      // Insere em cliente
+      $sql = "INSERT INTO Cliente (nome, sobrenome, nome_user, celular, email, senha_cliente) VALUES ('$primeironome', '$sobrenome', '$usuario', '$celular', '$email', '$senha')";
 
-      //Executa a query no banco
+      // Mostra a query para depuração
+      echo "<p>Query SQL: $sql</p>";
+
+      // Executa a query no banco
       $result = mysqli_query($con, $sql);
 
-      //Verifica se a inserção foi bem-sucedida 😶
-      if ($result)
-      {
-        echo "<h2>Dados cadastrados com sucesso!</h2>";;
-      } else 
-      {
+      // Verifica se a inserção foi bem-sucedida
+      if ($result) {
+        echo "<h2>Dados cadastrados com sucesso!</h2>";
+      } else {
         echo "<h2>Erro ao cadastrar!</h2>";
-        echo "<p class='error-message'>".mysqli_query($con)."</p>";
+        echo "<p class='error-message'>".mysqli_error($con)."</p>";
       }
 
-      //Fecha a conexão com o banco de dados
+      // Fecha a conexão com o banco de dados
       mysqli_close($con);
     ?>
 </body>
