@@ -1,4 +1,4 @@
--- !IMPORTANTE! o comando "if exists e if not exists" deve ser utilizado para evitar possíveis erros
+-- O esquema do banco precisa de revisão
 -- Deleta o banco de dados Agama caso já exista
 drop database if exists Agama;
 -- Cria o banco de dados Agama caso não exista
