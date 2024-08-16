@@ -4,7 +4,7 @@
     $username = 'root';
     $password = '';
     $database = 'Agama';
-    $port     = 3307;
+    $port     = 3307; //ou 3306, no caso do meu pc
     //Conecta com o banco
     $con = mysqli_connect($hostname, $username, $password, $database, $port);
     //Verifica a conexão

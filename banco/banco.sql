@@ -8,15 +8,17 @@ use Agama;
 -- Cria a tabela Cliente caso não exista
 create table if not exists Cliente (
 	id_cliente 			int auto_increment primary key,
-    nome_cliente		varchar(100) not null,
+    nome				varchar(100) not null,
+    sobrenome			varchar(100) not null,
+    nome_user			varchar(100) not null,
     email				varchar(200) not null,
     senha_cliente		varchar(100) not null,
+    celular				varchar(8) not null,
     cidade				varchar(100),
     bairro				varchar(100),
     rua					varchar(100),
     numero				tinyint,
-    cep					varchar(9) not null,
-    cpf					varchar(14) not null
+    cep					varchar(9)
 );
 -- Cria a tabela Profissional caso não exista
 create table if not exists Profissional (
