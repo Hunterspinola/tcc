@@ -29,6 +29,7 @@ body {
   align-items: center;
   background: #E6D4E0;
 }
+
 /*---------------INICIO MENU------------*/
 
 header {
@@ -99,7 +100,7 @@ header .fa-bars {
 
 
 /* -------------------------- INICIO IMAGEM CADASTRO ------------------------------ */
-.left-cadastro{
+.left-cadastro {
   width: 50vw;
   height: 100vh;
   display: flex;
@@ -107,13 +108,16 @@ header .fa-bars {
   align-items: center;
   flex-direction: column;
 }
-.left-cadastro >h1{
+
+.left-cadastro>h1 {
   font-size: 3rem;
   color: #290A27;
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 65px;
 }
-.left-cadastro-imagem{
+
+.left-cadastro-imagem {
   width: 35vw;
 }
 
@@ -121,13 +125,14 @@ header .fa-bars {
 
 /* ---------------------------------- INICIO CADASTRO QUESTIONS ----------------------------- */
 
-.container{
+.container {
   width: 50%;
   height: 50vh;
   display: flex;
-  
+
 }
-.form{
+
+.form {
   width: 84%;
   display: flex;
   justify-content: center;
@@ -138,16 +143,19 @@ header .fa-bars {
   padding: 3rem;
   box-shadow: 0px -10px 150px #b957b4;
 }
-.form-header{
+
+.form-header {
   margin-bottom: 3rem;
   display: flex;
   justify-content: space-between;
 }
-.buton-entrar{
-display: flex;
-align-items: center;
+
+.buton-entrar {
+  display: flex;
+  align-items: center;
 }
-.form-header h1::after{
+
+.form-header h1::after {
   content: '';
   display: block;
   width: 5rem;
@@ -157,24 +165,28 @@ align-items: center;
   position: absolute;
   border-radius: 10px;
 }
-.form-header h1{
+
+.form-header h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 3.5rem;
   color: #E6D4E0;
 }
-.input-gruop{
+
+.input-gruop {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem 0;
   width: 95%;
 }
-.input-box{
+
+.input-box {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
-.input-box input{
+
+.input-box input {
   margin: 0.6rem 0;
   padding: 1rem 1.5rem;
   border: none;
@@ -184,30 +196,36 @@ align-items: center;
   box-shadow: 0px 10px 40px #00000056;
   color: #E6D4E0;
 }
-.input-box input:hover{
+
+.input-box input:hover {
   background-color: #b957b4;
 }
-.input-box ::placeholder{
+
+.input-box ::placeholder {
   color: #e6d4e0a9;
 }
-.input-box label, .gender-title h6{
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #E6D4E0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.input-box input ::placeholder{
-  color: #1b0c1a;
-}
-/* ------------------------------ SELECT ----------------------------- */
-.input-box h3{
+
+.input-box label,
+.gender-title h6 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #E6D4E0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.input-box select{
+.input-box input ::placeholder {
+  color: #1b0c1a;
+}
+
+/* ------------------------------ SELECT ----------------------------- */
+.input-box h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #E6D4E0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-box select {
   background-color: #9c4c98;
   border-radius: 10px;
   border-color: #9c4c98;
@@ -215,19 +233,22 @@ align-items: center;
   height: 45%;
   box-shadow: 0px 10px 40px #00000056;
 }
-.input-box select option{
-color: #E6D4E0;
-}
-#ramo{
+
+.input-box select option {
   color: #E6D4E0;
 }
+
+#ramo {
+  color: #E6D4E0;
+}
+
 /* ------------------------------ FIM SELECT ----------------------------- */
 
 
 /* ------------------------------ FIM LOGIN QUESTIONS ----------------------------- */
 
 /* ------------ INICIO BOTÃO ------------------ */
-.cadastro-buton button{
+.cadastro-buton button {
   border: none;
   background-color: #E6D4E0;
   padding: 0.4rem 1rem;
@@ -235,19 +256,88 @@ color: #E6D4E0;
   cursor: pointer;
   box-shadow: 0px 10px 40px -12px #b957b4;
 }
-.cadastro-buton  a{
+
+.cadastro-buton a {
   text-decoration: none;
   font-size: 2rem;
   color: #290A27;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.cadastro-buton :hover{
+.cadastro-buton :hover {
   background-color: #9c4c98;
   color: #E6D4E0;
 }
+
 /* ------------ FIM BOTÃO ------------------ */
 
+@media (max-width: 67px) {
+  html {
+    font-size: 55%;
+
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  body {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #risquinhos:checked~.navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+
+  .titulo {
+    padding-top: 0px;
+  }
+
+
+}
+
+/* Para telas menores que 450px */
+@media (max-width: 450px) {
+  .titulo {
+    padding-top: 35px;
+  }
+
+  .right-login {
+    width: 250px;
+  }
+
+}
 
 
 
@@ -296,30 +386,35 @@ color: #E6D4E0;
 
 /*Midia quer*/
 @media(max-width:950px) {
-.card-login{
-  width: 85%;
-}
+  .card-login {
+    width: 85%;
+  }
 }
 
 @media(max-width: 600px) {
-  .main-login{
+  .main-login {
     flex-direction: column;
   }
-  .left-login > h1{
+
+  .left-login>h1 {
     display: none;
   }
-  .left-login{
+
+  .left-login {
     width: 100%;
     height: auto;
   }
-  .right-login{
+
+  .right-login {
     width: 100%;
     height: auto;
   }
-  .left-login-imagem{
+
+  .left-login-imagem {
     width: 50vw;
   }
-  .card-login{
+
+  .card-login {
     width: 90vw;
   }
 }
