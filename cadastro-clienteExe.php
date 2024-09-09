@@ -32,8 +32,6 @@
       // Insere em cliente
       $sql = "INSERT INTO Cliente (nome, sobrenome, nome_user, celular, email, senha_cliente) VALUES ('$primeironome', '$sobrenome', '$usuario', '$celular', '$email', '$senha')";
 
-      // Mostra a query para depuração
-      echo "<p>Query SQL: $sql</p>";
 
       // Executa a query no banco
       $result = mysqli_query($con, $sql);
