@@ -20,6 +20,8 @@ create table if not exists Cliente (
     numero				tinyint,
     cep					varchar(9)
 );
+--dnqwqldnsxsnxlknlsnkxlknsxnsl
+
 -- Cria a tabela Profissional caso não exista
 create table if not exists Profissional (
   id_prof				INT AUTO_INCREMENT PRIMARY KEY,
