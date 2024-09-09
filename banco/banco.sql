@@ -20,7 +20,6 @@ create table if not exists Cliente (
     numero				tinyint,
     cep					varchar(9)
 );
---dnqwqldnsxsnxlknlsnkxlknsxnsl
 
 -- Cria a tabela Profissional caso não exista
 create table if not exists Profissional (
@@ -38,6 +37,7 @@ create table if not exists Profissional (
 create table if not exists Servico (
 	id_servico			int auto_increment primary key,
     id_prof				int,
+    nome				varchar(100) not null,
     categoria			varchar(100) not null,
     preco				double not null,
     descricao			longtext not null,
