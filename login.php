@@ -1,36 +1,21 @@
 <?php
-// Conexão com o banco de dados
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "Agama";
+    include('includes/conexao.php');
+    $usuario = $_POST['usuario'];
+    $senha = $_POST['senha'];
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verifica se a conexão foi estabelecida com sucesso
-if ($conn->connect_error) {
-    die("Erro de conexão: " . $conn->connect_error);
-}
-
-// Variáveis para armazenar os dados do formulário
-$usuario = $_POST['usuario'];
-$senha = $_POST['senha'];
-
-// Consulta ao banco de dados para verificar se o usuário existe
-$query = "SELECT * FROM Profissional WHERE usuario = '$usuario' AND senha = '$senha'";
-$result = $conn->query($query);
-
-if ($result->num_rows > 0) {
-    // Se o usuário existe, inicia a sessão e redireciona para a página de dashboard
-    session_start();
-    $_SESSION['usuario'] = $usuario;
-    header('Location: dashboard.php');
-    exit;
-} else {
-    // Se o usuário não existe, exibe uma mensagem de erro
-    echo "Usuário ou senha inválidos";
-}
-
-// Fecha a conexão com o banco de dados
-$conn->close();
+    $sql = "SELECT * FROM Profissional WHERE usuario = 'usuario'";
+    $result = mysqli_query($con, $sql);
+    
+    if (mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_array($result);
+        if($row['senha'] == $senha) {
+            include('includes/inicia_sessao.php');
+            $_SESSION['login'] = $row;
+            header('Location: index.html'); // volta para a página inicial
+        } else {
+            echo "<h1>Senha inválida seu burro! Sua senha é ".$row['senha']."</h1>";
+        }
+    } else {
+        echo "<h1>Usuário não encontrado</h1>";
+    }
 ?>
