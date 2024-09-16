@@ -46,7 +46,6 @@ if ($stmt->execute()) {
     echo "<h2>Erro ao cadastrar!</h2>";
     echo "<p class='error-message'>". $stmt->error ."</p>";
 }
-
 // Fecha a conexão com o banco de dados
 $stmt->close();
 $con->close();
