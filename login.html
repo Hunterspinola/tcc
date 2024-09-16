@@ -29,48 +29,49 @@
     <!-- -------------------------FIM MENU-------------------- -->
 
     <!-- -------------------------INICIO LOGIN-------------------- -->
-    <div class="main-login">
-      <div class="left-login">
-        <h1 class="titulo">Faça o login para se conectar com a gente</h1>
-        <img
-          src="pessoaloping.svg"
-          class="left-login-imagem"
-          alt="pessoaloping"
-        />
-      </div>
+    <form action="login.php" method="post">
+      <div class="main-login">
+        <div class="left-login">
+          <h1 class="titulo">Faça o login para se conectar com a gente</h1>
+          <img
+            src="pessoaloping.svg"
+            class="left-login-imagem"
+            alt="pessoaloping"
+          />
+        </div>
 
-      <div class="right-login">
-        <div class="card-login">
-          <h1>Login</h1>
+        <div class="right-login">
+          <div class="card-login">
+            <h1>Login</h1>
 
-          <div class="text-box">
-            <label for="usuario">Nome de usuario</label>
-            <input
-              id="usuario"
-              type="text"
-              name="usuario"
-              placeholder="usuario"
-              required
-            />
+            <div class="text-box">
+              <label for="usuario">Nome de usuario</label>
+              <input
+                id="usuario"
+                type="text"
+                name="usuario"
+                placeholder="usuario"
+                required
+              />
+            </div>
+
+            <div class="text-box">
+              <label for="senha">Sua senha</label>
+              <input
+                id="senha"
+                type="password"
+                name="senha"
+                placeholder="senha"
+                required
+              />
+            </div>
+
+            <button type="submit">Login</button>
+            <a href="cadastro.html" class="criar">Criar conta</a>
           </div>
-
-          <div class="text-box">
-            <label for="senha">Sua senha</label>
-            <input
-              id="senha"
-              type="password"
-              name="senha"
-              placeholder="senha"
-              required
-            />
-          </div>
-
-          <a href="#" class="btn" align="center">LOGIN</a>
-          <a href="cadastro.html" class="criar">Criar conta</a>
         </div>
       </div>
-    </div>
-
+  </form>
     <!-- -------------------------FIM LOGIN-------------------- -->
   </body>
 </html>
