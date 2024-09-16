@@ -5,15 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/deletar.css">
     <title>Resultado</title>
 </head>
 
 <body>
-   
-    <section>
-        <div class="principal">
+           <div class="principal">
             <?php
             include('includes/conexao.php');
             //UPLOAD FOTO
@@ -26,6 +22,8 @@
             }
             //FIM UPLOAD
             $nome = $_POST['nome'];
+            $descricao = $_POST['descricao'];
+            $preco = $_POST['preco'];
             $categoria = $_POST['categoria'];
             echo "<h1>Dados do produto</h1>";
             echo "Nome: $nome</br>";
@@ -34,8 +32,8 @@
             echo "Categoria: $categoria</br>";
 
             
-            $sql = "INSERT INTO Servico (nome, categoria)";
-            $sql .= " VALUES('" . $nome . "', '" . $categoria . "')";
+            $sql = "INSERT INTO Servico (nome, descricao, preco, categoria, foto)";
+            $sql .= " VALUES('$nome' , '$descricao' , '$preco' , '$categoria' , , '$nome_foto')";
             echo $sql;
             // Executa comando no banco de dados
             $result =  mysqli_query($con, $sql);
@@ -47,7 +45,6 @@
             }
             ?>
         </div>
-    </section>
 </body>
 
 </html>
