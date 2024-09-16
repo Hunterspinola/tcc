@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/cadastro.css" />
-    <title>Cadastro de serviço</title>
+    <title>Cadastro de Serviços</title>
 </head>
 
 <body>
    
     <section>
         <div class="principal box">
-            <h2>Cadastro de Produtos</h2>
-            <form action="cadastro-produtosExe.php" method="post" 
+            <h2>Cadastro de Serviços</h2>
+            <form action="cadastro-servicosExe.php" method="post" 
                     enctype="multipart/form-data"><!--codificação para upload-->
                 <div>
                     <label for="foto">Foto</label>
@@ -34,16 +34,16 @@
                     <input type="text" name="preco" id="preco" />
                 </div>
                 
-                <div><label for="cat">Categoria</label>
+                <div>
+                <label for="categoria">Categoria</label>
                 <select name="categoria" id="categoria" class="box-inline">
-                <option value="rep">reparo</option>
-                <option value="tec">tecnologia</option>
-                <option value="con">construção</option>
-                <option value="lim">limpeza</option>
-                <option value="mec">mecânica</option>
-                <option value="bel">beleza</option>
-                <option value="conf">confeitaria</option>
-
+                    <option value="rep">reparo</option>
+                    <option value="tec">tecnologia</option>
+                    <option value="con">construção</option>
+                    <option value="lim">limpeza</option>
+                    <option value="mec">mecânica</option>
+                    <option value="bel">beleza</option>
+                    <option value="conf">confeitaria</option>
                 </select>
                 </div>
                 <button type="submit">Cadastrar</button>
