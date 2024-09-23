@@ -17,7 +17,7 @@ create table if not exists Cliente (
     cidade				varchar(100),
     bairro				varchar(100),
     rua					varchar(100),
-    numero				tinyint,
+    numero			    ,
     cep					varchar(9)
 );
 <<<<<<< HEAD
@@ -42,17 +42,17 @@ create table if not exists Servico (
 	id_servico			int auto_increment primary key,
     id_prof				int,
     nome				varchar(100) not null,
+    preco				float(10, 2) not null,
+    descricao			varchar(200) not null,
     categoria			varchar(100) not null,
-    preco				decimal(10, 2) not null,
-    descricao			longtext not null,
-    foto				varchar(255) not null,
+    foto				varchar(100) not null,
     foreign key(id_prof) references Profissional(id_prof)
 );
 
 -- Cria a tabela Pagamento caso não exista
 create table if not exists Pagamento (
 	id_pag				int auto_increment primary key,
-    valor				decimal(10, 2) not null,
+    valor				float not null,
     id_cliente			int,
     id_servico			int,
     foreign key(id_cliente) references Cliente(id_cliente),
