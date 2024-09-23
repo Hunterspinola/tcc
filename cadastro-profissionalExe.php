@@ -49,4 +49,5 @@ if ($stmt->execute()) {
 // Fecha a conexão com o banco de dados
 $stmt->close();
 $con->close();
+header("Location: index.php");
 ?>
