@@ -111,6 +111,7 @@ header .fa-bars {
   color: #290A27;
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 35px;
 }
 .left-cadastro-imagem{
   width: 35vw;
@@ -254,6 +255,30 @@ color: #E6D4E0;
   color: #E6D4E0;
 }
 /* ------------ FIM BOTÃO ------------------ */
+@media (max-width: 1025px) {
+  
+  body{
+    flex-direction: column
+  }
+.left-cadastro{
+  margin-top: 210px;
+  width: 100%;
+}
+.form-header{
+  margin-top: 200 px;
+}
+.form{
+  height: 450px;
+  width: 100%;
+}
+.input-gruop{
+  width: 100%;
+}
+.container{
+  width: 80%;
+}
+}
+
 @media (max-width: 992px) {
   html {
     font-size: 55%;
@@ -319,17 +344,56 @@ color: #E6D4E0;
   body{
     flex-direction: column
   }
+  .left-cadastro{
+   padding-top: 90px;
+   width: 100%;
+  }
+ .left-cadastro-imagem{
+  width: 50vw;
+ }
+ .form{
+  margin-top: 130px;
+  height: 550px;
+  width: 100%;
+ }
+ .form-header h1{
   
+  color: #483942;
+}
+.volta-login a {
+  color: #9c4c98;
+  font-size: 1.7rem;
 
+}
+.input-box label, .gender-title h6 {
+  font-size: 1.9rem;
+}
 }
 
 /* Para telas menores que 450px */
 @media (max-width: 450px) {
-  .titulo{
-    padding-top: 70px;
+  .left-cadastro{
+    padding-top: 0;
+    padding-left: 10px;
   }
+  .left-cadastro  h1{
+    padding-top: 0;
+  }
+  .form-header h1 {
+    font-size: 3.7rem;
+  }
+  .form-header{
+    display: block;
+  }
+  .volta-login{
+    padding-top: 10px;
+  }
+  
  .right-login{
   width: 250px;
+ }
+ .form{
+  height: 600px;
  }
 
 }
