@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css">
     <?php
         include('includes/iniciaSessao.php');
-        //Não tire o comentário se não fica impossível acessar o index.
+        //Não tire o comentário se não fica impossível acessar o index.php
         /*if(empty($_SESSION['login'])) {
             header("Location: login.html");
         }*/
