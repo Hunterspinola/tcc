@@ -110,7 +110,7 @@ header .fa-bars {
 }
 
 .left-cadastro>h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #290A27;
   text-transform: uppercase;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -126,8 +126,8 @@ header .fa-bars {
 /* ---------------------------------- INICIO CADASTRO QUESTIONS ----------------------------- */
 
 .container {
-  width: 50%;
-  height: 50vh;
+  width: 70%;
+  height: 60vh;
   display: flex;
 
 }
@@ -242,6 +242,7 @@ header .fa-bars {
   color: #E6D4E0;
 }
 
+
 /* ------------------------------ FIM SELECT ----------------------------- */
 
 
@@ -271,10 +272,36 @@ header .fa-bars {
 
 /* ------------ FIM BOTÃO ------------------ */
 
-@media (max-width: 67px) {
+@media (max-width: 1025px) {
+  
+  body{
+    flex-direction: column
+  }
+.left-cadastro{
+  width: 100%;
+  padding-top: 200px;
+}
+
+.form{
+
+  width: 100%;
+}
+.input-gruop{
+  width: 100%;
+}
+.container{
+  width: 80%;
+  height: 80vh;
+}
+.left-cadastro h1{
+  padding-top: 200px;
+}
+
+}
+
+@media (max-width: 992px) {
   html {
     font-size: 55%;
-
   }
 
   header {
@@ -285,12 +312,23 @@ header .fa-bars {
     padding: 2rem;
   }
 
-  body {
+  .main-login {
     flex-direction: column;
     padding: 1rem;
   }
-}
 
+  .card-login {
+    width: 350px;
+  }
+
+  .titulo {
+    margin-top: 70px;
+  }
+  .right-login{
+    width: 70%;
+  }
+ 
+}
 
 /* Para telas menores que 768px */
 @media (max-width: 768px) {
@@ -308,7 +346,7 @@ header .fa-bars {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
-  header #risquinhos:checked~.navbar {
+  header #risquinhos:checked ~ .navbar {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
@@ -320,101 +358,85 @@ header .fa-bars {
     display: block;
   }
 
-  .titulo {
-    padding-top: 0px;
+  .titulo{
+    padding-top: 20px;
+ 
+   
   }
+  body{
+    flex-direction: column
+  }
+  .left-cadastro{
+   padding-top: 110px;
+   width: 100%;
+   height: 30vh;
+  }
+ .left-cadastro-imagem{
+  width: 50vw;
+  
+ }
+ .left-cadastro h1{
+  padding-top: 200px;
+  padding-left: 10px;
+ }
+ .form{
+  margin-top: 290px;
+  height: 780px;
+  width: 100%;
+ }
+ .form-header h1{
+  
+  color: #e1dcdf;
+}
+.volta-login a {
+  color: #9c4c98;
+  font-size: 1.7rem;
 
+}
+.input-box label, .gender-title h6 {
+  font-size: 1.9rem;
+}
 
 }
 
 /* Para telas menores que 450px */
 @media (max-width: 450px) {
-  .titulo {
-    padding-top: 35px;
+  .left-cadastro{
+    padding-top: 200px;
+    padding-left: 10px;
   }
-
-  .right-login {
-    width: 250px;
+  .left-cadastro  h1{
+    padding-top: 0;
   }
+  .form-header h1 {
+    font-size: 3.7rem;
+  }
+  .form-header{
+    display: block;
+  }
+  .volta-login{
+    padding-top: 10px;
+  }
+  
+ .right-login{
+  width: 250px;
+ }
+ .form{
+  height: 700px;
+ }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Midia quer*/
-@media(max-width:950px) {
-  .card-login {
-    width: 85%;
-  }
-}
-
-@media(max-width: 600px) {
-  .main-login {
-    flex-direction: column;
-  }
-
-  .left-login>h1 {
-    display: none;
-  }
-
-  .left-login {
-    width: 100%;
-    height: auto;
-  }
-
-  .right-login {
-    width: 100%;
-    height: auto;
-  }
-
-  .left-login-imagem {
-    width: 50vw;
-  }
-
-  .card-login {
-    width: 90vw;
-  }
-}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -261,8 +261,8 @@ color: #E6D4E0;
     flex-direction: column
   }
 .left-cadastro{
-  margin-top: 210px;
   width: 100%;
+  padding-top: 200px;
 }
 .form-header{
   margin-top: 200 px;
@@ -340,13 +340,16 @@ color: #E6D4E0;
 
   .titulo{
     padding-top: 20px;
+ 
+   
   }
   body{
     flex-direction: column
   }
   .left-cadastro{
-   padding-top: 90px;
+   padding-top: 110px;
    width: 100%;
+   height: 30vh;
   }
  .left-cadastro-imagem{
   width: 50vw;
@@ -367,6 +370,10 @@ color: #E6D4E0;
 }
 .input-box label, .gender-title h6 {
   font-size: 1.9rem;
+}
+.left-cadastro h1{
+  padding-left: 10px;
+  padding-top: 0;
 }
 }
 
