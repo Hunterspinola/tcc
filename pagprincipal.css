@@ -55,7 +55,7 @@ section {
   display: block;
 }
 .sus .nav-links .dropdown-content a:hover {
-  background-color: #333;
+  background-color: #E6D4E0;
 }
 .sus .nav-links li:hover .dropdown-content {
   display: block;
@@ -260,7 +260,65 @@ border-radius: 2rem;
 }
 
 /*-------------------FIM ICONES---------------*/
+/*-------------------INICIO CARDS---------------*/
 
+/*-------------------FIM CARDS---------------*/
+.card-container{
+  display: flex;
+  gap: 20px;
+}
+
+.card{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2, box-shadow 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 15px;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-title{
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 15px 0 10px;
+}
+
+.card-description{
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-button{
+  background-color: #6d3c52;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.card-button:hover{
+  background-color: #EAD7E2;
+  color: #1b0c1a;
+}
 
 
 
