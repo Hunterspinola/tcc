@@ -8,6 +8,13 @@
     <title>AGAMA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
     <link rel="stylesheet" href="index.css">
+    <?php
+        include('includes/iniciaSessao.php');
+        //Não tire o comentário se não fica impossível acessar o index.php
+        /*if(empty($_SESSION['login'])) {
+            header("Location: login.html");
+        }*/
+    ?>
 </head>
 
 <body>
@@ -25,7 +32,7 @@
             <a href="#avaliaçao">Avaliações</a>
             <a href="#contato">Contato</a>
             <a href="login.html">Entrar</a>
-            <a href="pagprincipal.html">Serviços</a>
+            <a href="pagprincipal.html">Teste</a>
         </nav>
 
 

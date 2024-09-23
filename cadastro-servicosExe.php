@@ -9,8 +9,7 @@
 </head>
 
 <body>
-           <div class="principal">
-            <?php
+<?php
             include('includes/conexao.php');
             //UPLOAD FOTO
             $nome_foto = "";
@@ -21,19 +20,22 @@
             move_uploaded_file($_FILES['foto']['tmp_name'],$nome_foto);
             }
             //FIM UPLOAD
+
             $nome = $_POST['nome'];
             $descricao = $_POST['descricao'];
             $preco = $_POST['preco'];
             $categoria = $_POST['categoria'];
-            echo "<h1>Dados do produto</h1>";
+            echo "<h1>Dados do serviço</h1>";
             echo "Nome: $nome</br>";
-            echo "Descrição: $descricao</br>";
-            echo "Preço: $preco</br>";
-            echo "Categoria: $categoria</br>";
-
-            
-            $sql = "INSERT INTO Servico (nome, descricao, preco, categoria, foto)";
-            $sql .= " VALUES('$nome' , '$descricao' , '$preco' , '$categoria' , , '$nome_foto')";
+            echo "Descricao: $descricao</br>";
+            echo "Preco: $preco</br>";
+            echo "categoria: $categoria</br>";
+            // INSERT INTO cidade (nome, especie, raca, id_pessoa, idade)
+            // VALUES ('$nome', '$especie', '$raca', $pessoa,)
+        
+            $sql = "INSERT INTO Servico (nome, descricao, preco, 
+                                 categoria, foto)";
+            $sql .= " VALUES('$nome', '$descricao', '$preco', '$categoria', '$nome_foto')";
             echo $sql;
             // Executa comando no banco de dados
             $result =  mysqli_query($con, $sql);
