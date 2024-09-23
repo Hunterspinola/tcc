@@ -22,7 +22,7 @@
                     <input type="file" name="foto" id="foto" accept="image/*"/>
                 </div>
                 <div>
-                    <label for="nome">Nome</label>
+                    <label for="nome">Serviço oferecido:</label>
                     <input type="text" name="nome" id="nome" />
                 </div>
                 <div>
@@ -31,7 +31,7 @@
                 </div>
                 <div>
                     <label for="preco">Preço</label>
-                    <input type="text" name="preco" id="preco" />
+                    <input type="number" name="preco" id="preco" />
                 </div>
                 
                 <div>
