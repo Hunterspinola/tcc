@@ -1,4 +1,4 @@
-Bem-vindo à Plataforma de Freelancers
+Bem-vindo à Plataforma de Freelancers AGAMA!
 
 Sobre o Projeto
 
