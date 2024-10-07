@@ -56,7 +56,7 @@
             <span> Profissionais de confiança </span>
             <p>Venha conhecer os serviços que a equipe Agama tem a oferecer perto da sua casa</p>
 
-            <a href="#" class="btn">contrate agora</a>
+            <a href="login.html" class="btn">contrate agora</a>
         </div>
 
     </section>
