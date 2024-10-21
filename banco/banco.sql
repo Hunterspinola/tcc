@@ -59,7 +59,7 @@ create table if not exists Pagamento (
 -- Cria a tabela Mensagem caso não exista
 create table if not exists Mensagem (
 	id_mensagem			int auto_increment primary key,
-    id_remetente			int,
+    id_remetente		int,
     id_destinatario		int,
     mensagem			longtext not null,
     data_envio			timestamp default current_timestamp,
