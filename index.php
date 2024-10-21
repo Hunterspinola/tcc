@@ -54,7 +54,7 @@
         <div class="content">
             <h3>Serviços perto de você</h3>
             <span> Profissionais de confiança </span>
-            <p>Venha conhecer os serviços que a equipe Agama tem a oferecer perto da sua casa</p>
+            <p>Venha conhecer os serviços que a equipe Agama têm a oferecer perto da sua casa</p>
 
             <a href="login.html" class="btn">contrate agora</a>
         </div>
@@ -67,20 +67,20 @@
 
     <section class="sobre" id="sobre">
 
-        <h1 class="heading"><span> Oque </span> temos a oferecer? </h1>
+        <h1 class="heading"><span> O que </span> temos a oferecer? </h1>
 
         <div class="row">
 
             <div class="imagem">
                 <img src="../tcc/imagens.img/cozina.avif" alt="">
-                <h3>varios tipos de serviços</h3>
+                <h3>vários tipos de serviços</h3>
             </div>
 
             <div class="content">
                 <h3> Um pouco sobre nosso trabalho</h3>
-                <p>Aqui no site Agama, você pode contratar varios tipos de proficionais altonomos,
-                    desde serviços de reparo, até serviços de beleza e colinaria. Além de contratar
-                    você também pode se cadastrar como um profissional altonomo. Nosso objetivo é facilitar a
+                <p>Aqui no site Agama, você pode contratar vários tipos de profissionais autônomos.
+                    Desde serviços de reparo, até serviços de beleza e culinaria. Além de contratar,
+                    você também pode se cadastrar como um profissional autônomo. Nosso objetivo é facilitar a
                     contratação de serviços </p>
                 <!-- <a href="#" class="btn">mais informações</a> -->
             </div>
@@ -135,7 +135,7 @@
         <div class="iconis">
             <img src="../tcc/imagens.img/carro.png" alt="">
             <div class="infor">
-                <h3>Mecanica </h3>
+                <h3>Mecânica </h3>
                 <span>fvdgfdgf</span>
             </div>
         </div>
