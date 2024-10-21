@@ -30,7 +30,7 @@ Este documento descreve as práticas de segurança relacionadas ao nosso projeto
 
 Se você identificar uma vulnerabilidade ou um problema de segurança, entre em contato conosco imediatamente:
 
-- **E-mail**: [agama@gmail.com](mailto:agama@gmail.com)
+- **E-mail**: [agamacompany@gmail.com](mailto:agamacompany@gmail.com)
 - **Tempo de resposta**: Faremos o nosso melhor para responder em até 48 horas.
 
 ## Contribuições
