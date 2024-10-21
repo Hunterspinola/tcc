@@ -275,7 +275,7 @@
                 <input type="number" placeholder="Número de telefone" class="box">
                 <textarea name="" class="box" placeholder="Menssagem" id="" cols="30" rows="10">
                     </textarea>
-                    <a href="#" class="btn">Enviar menssagem</a>
+                    <a href="#" class="btn">Enviar mensagem</a>
             </form>
 
             <div class="imagem">
