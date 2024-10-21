@@ -49,4 +49,4 @@ Este projeto foi desenvolvido como parte do curso Técnico em Informática, e eu
 
 Contato
 
-Se você tiver alguma dúvida, problema ou feedback, por favor, não hesite em entrar em contato comigo em agama@gmail.com.
+Se você tiver alguma dúvida, problema ou feedback, por favor, não hesite em entrar em contato comigo em agamacompany@gmail.com.
