@@ -13,7 +13,8 @@
             $_SESSION['login'] = $row;
             header('Location: index.html'); // volta para a página inicial
         } else {
-            echo "<h1>Senha inválida seu burro! Sua senha é ".$row['senha']."</h1>";
+            echo "<h1>Senha inválida seu burro! Sua senha é ""</h1>";
+            header('Location: login.php'); // retorna à página de login
         }
     } else {
         echo "<h1>Usuário não encontrado</h1>";

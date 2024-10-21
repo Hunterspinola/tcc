@@ -46,7 +46,7 @@
 
       // Fecha a conexão com o banco de dados
       mysqli_close($con);
-      header("Location: index.html");
+      header("Location: index.php");
     ?>
 </body>
 </html>

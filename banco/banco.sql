@@ -17,13 +17,10 @@ create table if not exists Cliente (
     cidade				varchar(100),
     bairro				varchar(100),
     rua					varchar(100),
-    numero			    ,
+    numero			    int,
     cep					varchar(9)
 );
-<<<<<<< HEAD
 
-=======
->>>>>>> 46c952428dfc2b033fb395f8b0e7bf17b9b9292b
 -- Cria a tabela Profissional caso não exista
 create table if not exists Profissional (
   id_prof				INT AUTO_INCREMENT PRIMARY KEY,
