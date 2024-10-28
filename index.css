@@ -224,6 +224,39 @@ header .fa-bars {
 
 /*---------------FIM SOBRE------------*/
 
+/*---------------INICIO BARRA DE PESQUISA--------------*/
+  .barrapesq {
+    position: relative;  
+    background-color: #E6D4E0;
+  }
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.search-container input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.search-container button {
+    background-color: #5C2D50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.search-container button:hover {
+    background-color: #7d236a;
+}
+  /*-------------FIM BARRA DE PESQUISA-------*/
+
 /*---------------INICIO ICONES------------*/
 
 .servicons {

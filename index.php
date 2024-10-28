@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGAMA</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
     <link rel="stylesheet" href="index.css">
     <?php
@@ -91,68 +92,71 @@
 
     <!-------------------------FIM SOBRE-------------------------->
 
+
     <!-------------------------INICIO ICONES---------------------->
 
     <section class="serviços" id="serviços"></section>
 
     <h1 class="servicons"><span> Esses são alguns </span> dos serviços oferecidos </h1>
 
+     <!-------------------------INICIO BARRA DE PESQUISA---------------------->
+     <section class="barrapesq">
+     <div class="search-container">
+        <input type="text" placeholder="Procurar serviço...">
+        <button>Pesquisar</button>
+     </div>
+    </section>
+    <!-------------------------FIM BARRA DE PESQUISA-------------------------->
+
     <section class="iconis-conteiner">
 
-
+   
         <div class="iconis">
             <img src="../tcc/imagens.img/ferramentaagoravai.png" alt="">
             <div class="infor">
-                <h3>Reparo </h3>
-                <span>fvdgfdgf</span>
+                <h3><a href="login.html">Reparo</a></h3>
             </div>
         </div>
 
         <div class="iconis">
             <img src="../tcc/imagens.img/compiuter.png" alt="">
             <div class="infor">
-                <h3>Tecnologia </h3>
-                <span>fvdgfdgf</span>
+                <h3><a href="login.html">Tecnologia</a></h3>
             </div>
         </div>
 
         <div class="iconis">
             <img src="../tcc/imagens.img/predero.png" alt="">
             <div class="infor">
-                <h3>Construção </h3>
-                <span>fvdgfdgf</span>
+                <h3><a href="login.html">Construção</a></h3>
             </div>
         </div>
 
         <div class="iconis">
             <img src="../tcc/imagens.img/faxina.png" alt="">
             <div class="infor">
-                <h3>Limpeza </h3>
-                <span>fvdgfdgf</span>
+                <h3><a href="login.html">Limpeza</a></h3>
             </div>
         </div>
 
         <div class="iconis">
             <img src="../tcc/imagens.img/carro.png" alt="">
             <div class="infor">
-                <h3>Mecânica </h3>
-                <span>fvdgfdgf</span>
+                <h3><a href="login.html">Mecânica</a></h3>
             </div>
         </div>
 
         <div class="iconis">
             <img src="../tcc/imagens.img/bolo.png" alt="">
             <div class="infor">
-                <h3>Confeitaria </h3>
-                <span>fvdgfdgf</span>
+                <h3><a href="login.html">Confeitaria</a></h3>
             </div>
         </div>
 
         <div class="iconis">
             <img src="../tcc/imagens.img/make.png" alt="">
             <div class="infor">
-                <h3>Beleza </h3>
-                <span>fvdgfdgf</span>
+                <h3><a href="login.html">Beleza</a></h3>
             </div>
         </div>
 
