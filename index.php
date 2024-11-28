@@ -273,13 +273,13 @@
 
         <div class="row">
 
-            <form action="">
-                <input type="text" placeholder="Nome" class="box">
-                <input type="email" placeholder="Email" class="box">
-                <input type="number" placeholder="Número de telefone" class="box">
-                <textarea name="" class="box" placeholder="Menssagem" id="" cols="30" rows="10">
-                    </textarea>
-                    <a href="#" class="btn">Enviar mensagem</a>
+            <form action="https://formsubmit.co/agamaservicos@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Nome" class="box">
+                <input type="email" name="email" placeholder="Email" class="box">
+                <textarea name="message" class="box" placeholder="Menssagem" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://localhost/tcc/index.php">
+                <button type="submit" class="btn">Enviar mensagem</button>
             </form>
 
             <div class="imagem">
@@ -314,7 +314,7 @@
 
             <div class="box">
                 <h3>Contatos</h3>
-                <a href="#">Email: agamacompany@gmail.com</a>
+                <a href="#">Email: agamaservicos@gmail.com</a>
                 <a href="#">Instagram: agamacompany</a>
                 <a href="#">Telefone: 2346554655</a>
             </div>
