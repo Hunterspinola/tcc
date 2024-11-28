@@ -43,4 +43,5 @@ if ($result) {
     echo "<h2>Erro ao cadastrar</h2>";
     echo "<p class='error-message'>".mysqli_error($con)."</p>";
 }
+header('Location: index.php')
 ?>
