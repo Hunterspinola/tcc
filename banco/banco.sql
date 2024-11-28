@@ -1,3 +1,4 @@
+-- ESSE BANCO FOI DESCONCIDERADO. APENAS NÃO APAGUEI POR NÃO TER CERTEZA DE SUA NECESSIDADE
 -- Deleta o banco de dados Agama caso já exista
 drop database if exists Agama;
 -- Cria o banco de dados Agama caso não exista
