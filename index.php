@@ -274,10 +274,11 @@
         <div class="row">
 
             <form action="https://formsubmit.co/agamaservicos@gmail.com" method="POST">
-                <input type="text" placeholder="Nome" class="box">
-                <input type="email" placeholder="Email" class="box">
-                <textarea name="" class="box" placeholder="Menssagem" required></textarea>
-                <input type="hidden" name="_url" value="http://localhost/tcc/index.php">
+                <input type="text" name="name" placeholder="Nome" class="box">
+                <input type="email" name="email" placeholder="Email" class="box">
+                <textarea name="message" class="box" placeholder="Menssagem" required></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://localhost/tcc/index.php">
                 <button type="submit" class="btn">Enviar mensagem</button>
             </form>
 
