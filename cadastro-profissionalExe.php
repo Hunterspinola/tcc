@@ -7,9 +7,10 @@ $sobrenome = $_POST['sobrenome'];
 $usuario = $_POST['usuario'];
 $celular = $_POST['celular'];
 $email = $_POST['email'];
-$cnpj = $_POST['cnpj'];
+$cpf = $_POST['cpf'];
 $senha = $_POST['senha'];
 $confirmasenha = $_POST['confirmasenha'];
+$profissional = $_POST['profissional'];
 $ramo = $_POST['ramo'];
 
 // Verificar se as senhas coincidem
@@ -24,30 +25,22 @@ echo "Sobrenome: $sobrenome<br>";
 echo "Usuário: $usuario<br>";
 echo "Celular: $celular<br>";
 echo "Email: $email<br>";
-echo "CNPJ: $cnpj<br>";
+echo "CPF: $cpf<br>";
 echo "Senha: $senha<br>";
 echo "Confirmação da Senha: $confirmasenha<br>";
+echo "É profissional: $profissional";
 echo "Ramo: $ramo<br>";
 
 // Prepara a query SQL usando prepared statements
-$sql = "INSERT INTO Profissional (primeironome, sobrenome, usuario, celular, email, cnpj, senha, ramo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+$sql = "INSERT INTO Profissional (primeironome, sobrenome, usuario, celular, email, cpf, senha, profissinal, ramo)";
+$sql .= "VALUES ('".$primeironome"', '".$sobrenome"', '".$usuario"', '".$celular"', '".$email"', '".$cpf"', '".$senha"', ".$profissional", '".$ramo"')";
 
-$stmt = $con->prepare($sql);
-if ($stmt === false) {
-    die("Erro na preparação da query: " . $con->error);
-}
+$result = mysqli_query($con, $sql);
 
-// Associa os parâmetros e executa a query
-$stmt->bind_param('ssssssss', $primeironome, $sobrenome, $usuario, $celular, $email, $cnpj, $senha, $ramo);
-
-if ($stmt->execute()) {
+if ($result) {
     echo "<h2>Dados cadastrados com sucesso!</h2>";
 } else {
-    echo "<h2>Erro ao cadastrar!</h2>";
-    echo "<p class='error-message'>". $stmt->error ."</p>";
+    echo "<h2>Erro ao cadastrar</h2>";
+    echo "<p class='error-message'>".mysqli_error($con)."</p>";
 }
-// Fecha a conexão com o banco de dados
-$stmt->close();
-$con->close();
-//header("Location: index.php");
 ?>

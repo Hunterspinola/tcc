@@ -83,7 +83,11 @@
                 <label for="confirmasenha">Confirme sua senha</label>
                 <input id="confirmasenha" type="password" name="confirmasenha" placeholder="Senha" required>
               </div>
-              
+              <div class="input-box">
+                <label for="profissional">Você é prestador de serviço?</label>
+                <input type="radio" name="profissional" id="profissional" value="1"> Sim
+                <input type="radio" name="profissional" id="profissional" value="0" checked> Não
+              </div>
               <div class="input-box">
                 <h3>Selecione uma área</h3>
                 <select name="ramo" id="ramo">
