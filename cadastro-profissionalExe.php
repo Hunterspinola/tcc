@@ -2,9 +2,9 @@
 include('includes/conexao.php');
 
 // Obter dados do formulário
-$primeironome = $_POST['primeironome'];
+$nome = $_POST['primeironome'];
 $sobrenome = $_POST['sobrenome'];
-$usuario = $_POST['usuario'];
+$nome_user = $_POST['usuario'];
 $celular = $_POST['celular'];
 $email = $_POST['email'];
 $cpf = $_POST['cpf'];
@@ -20,7 +20,7 @@ if ($senha !== $confirmasenha) {
 
 // Exibir dados (opcional para depuração)
 echo "<h1>Dados do Profissional</h1>";
-echo "Nome: $primeironome<br>";
+echo "Nome: $nome<br>";
 echo "Sobrenome: $sobrenome<br>";
 echo "Usuário: $usuario<br>";
 echo "Celular: $celular<br>";
@@ -28,12 +28,12 @@ echo "Email: $email<br>";
 echo "CPF: $cpf<br>";
 echo "Senha: $senha<br>";
 echo "Confirmação da Senha: $confirmasenha<br>";
-echo "É profissional: $profissional";
+echo "É profissional: $profissional<br>";
 echo "Ramo: $ramo<br>";
 
 // Prepara a query SQL usando prepared statements
-$sql = "INSERT INTO Profissional (primeironome, sobrenome, usuario, celular, email, cpf, senha, profissinal, ramo)";
-$sql .= "VALUES ('".$primeironome"', '".$sobrenome"', '".$usuario"', '".$celular"', '".$email"', '".$cpf"', '".$senha"', ".$profissional", '".$ramo"')";
+$sql = "INSERT INTO Usuario (nome, sobrenome, nome_user, celular, email, cpf, senha, profissional, ramo) 
+        VALUES ('".$nome."', '".$sobrenome."', '".$nome_user."', '".$celular."', '".$email."', '".$cpf."', '".$senha."', '".$profissional."', '".$ramo."')";
 
 $result = mysqli_query($con, $sql);
 
