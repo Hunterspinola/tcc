@@ -104,8 +104,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%; /* Ajusta a largura para o centralizar */
-    height: 80vh;
+    width: 35%; /* Ajusta a largura para o centralizar */
+    height: 35vh;
   }
   .title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
