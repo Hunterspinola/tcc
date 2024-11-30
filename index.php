@@ -33,7 +33,7 @@
             <a href="#avaliaçao">Avaliações</a>
             <a href="#contato">Contato</a>
             <a href="login.html">Entrar</a>
-            <a href="pagprincipal.html">Teste</a>
+            <a href="cadastro-servicos.php">Teste</a>
         </nav>
 
 
