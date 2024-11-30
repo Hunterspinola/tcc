@@ -100,18 +100,20 @@
   /* ---------------------------------- INICIO CADASTRO QUESTIONS ----------------------------- */
   
   section{
-    width: 35%;
-    height: 50vh;
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Ajusta a largura para o centralizar */
+    height: 80vh;
   }
   .title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3.5rem;
     color: #290A27;
     font-weight: bold;
-    
     text-align: center;
+    margin-bottom: 2rem; /*Espaço entre o título e o principalbox*/
   }
   .principalbox{
     width: 84%;

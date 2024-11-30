@@ -26,8 +26,9 @@
       </div>
     </header>
     <!-- -----------------------------------------------------------FIM MENU---------------------------------------------------------------------------- -->
-    <div class="title">Cadastro de Serviços</div>
+    
 <section>
+        <div class="title">Cadastro de Serviços</div>
         <div class="principalbox">
             <form action="./cadastro-servicosExe.php" method="post" 
                     enctype="multipart/form-data"><!--codificação para upload-->
