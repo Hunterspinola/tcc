@@ -207,7 +207,8 @@
   @media (max-width: 1025px) {
     
     body{
-      flex-direction: column
+      flex-direction: column;
+      height: 150vh;
     }
   .left-cadastro{
     width: 100%;
@@ -226,11 +227,15 @@
   .container{
     width: 80%;
   }
+  section{
+    width: 50%;
+  }
   }
   
   @media (max-width: 992px) {
     html {
       font-size: 55%;
+     
     }
   
     header {
@@ -239,6 +244,7 @@
   
     section {
       padding: 2rem;
+      width: 80%;
     }
   
     .main-login {
@@ -351,7 +357,14 @@
    .form{
     height: 600px;
    }
-  
+  .title{
+    font-size: 3rem;
+  }
+  section{
+    width: 95%;
+  }
+
+    
   }
     
     
