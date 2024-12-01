@@ -222,6 +222,7 @@ a{
   .main-login {
     flex-direction: column;
     padding: 1rem;
+    height: 200vh;
   }
 
   .card-login {
