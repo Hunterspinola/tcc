@@ -6,16 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGAMA</title>
-
+    <?php
+        session_start();
+    ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
     <link rel="stylesheet" href="index.css">
-    <?php
-        include('includes/iniciaSessao.php');
-        //Não tire o comentário se não fica impossível acessar o index.php
-        /*if(empty($_SESSION['login'])) {
-            header("Location: login.html");
-        }*/
-    ?>
 </head>
 
 <body>
@@ -32,6 +27,7 @@
             <a href="consulta-servicos.php">Serviços</a>
             <a href="#contato">Contato</a>
             <a href="login.html">Entrar</a>
+            <a href="cadastro-servicos.php">Teste</a>
             <a href="cadastro-servicos.php">Cadastrar serviços</a>
             <a href="pagprincipal.html">Teste2</a>
         </nav>
@@ -187,14 +183,13 @@
             <form action="https://formsubmit.co/agamaservicos@gmail.com" method="POST">
                 <input type="text" name="name" placeholder="Nome" class="box">
                 <input type="email" name="email" placeholder="Email" class="box">
-                <textarea name="message" class="box" placeholder="Menssagem" required></textarea>
-                <input type="hidden" name="_captcha" value="false">
+                <textarea name="message" class="box" placeholder="Mensagem" required></textarea>
                 <input type="hidden" name="_next" value="http://localhost/tcc/index.php">
                 <button type="submit" class="btn">Enviar mensagem</button>
             </form>
 
             <div class="imagem">
-                <img src="../tcc/imagens.img/info.jpg" alt="">
+                <img src="../tcc/imagens.img/info.jpg" alt="imagem hehe">
             </div>
 
         </div>
