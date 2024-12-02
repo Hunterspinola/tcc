@@ -11,13 +11,6 @@
     ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
     <link rel="stylesheet" href="index.css">
-        <?php if(isset($_SESSION['login'])) : ?>
-            <div>
-                Olá <?php echo $_SESSION['login']['usuario']['nome'] ?>!
-                <!--<a href="core/usuario_repositorio.php?acao=logout" class="btn btn-link btn-sm" role="button">Sair</a>-->
-            </div>
-        <?php endif ?>
-    ?>
 </head>
 
 <body>
@@ -34,14 +27,9 @@
             <a href="consulta-servicos.php">Serviços</a>
             <a href="#contato">Contato</a>
             <a href="login.html">Entrar</a>
-<<<<<<< HEAD
-            <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['usuario']['profissional'] === 1)) : ?>
             <a href="cadastro-servicos.php">Teste</a>
-            <?php endif; ?>
-=======
             <a href="cadastro-servicos.php">Cadastrar serviços</a>
             <a href="pagprincipal.html">Teste2</a>
->>>>>>> 265deeb99f173d7da1e0fe62878981cc5cb681f0
         </nav>
 
     <div class="icons">
@@ -49,8 +37,6 @@
       <ul class="nav-links">
         <li>
             <a href="login.html" class="fas fa-user"></a>
-<<<<<<< HEAD
-=======
             <div class="dropdown-content">
             <a href="#">Sair</a>
           </div>
@@ -62,7 +48,6 @@
             
 
 
->>>>>>> 265deeb99f173d7da1e0fe62878981cc5cb681f0
         </div>
     </header>
     <!-- -------------------------FIM MENU-------------------- -->
