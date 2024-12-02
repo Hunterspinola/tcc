@@ -2,7 +2,7 @@
 -- Deleta o banco de dados Agama caso já exista
 drop database if exists Agama;
 -- Cria o banco de dados Agama caso não exista
-create database if not exists Agama;
+create database Agama;
 -- Utiliza o banco
 use Agama;
 
@@ -17,7 +17,7 @@ CREATE TABLE usuario (
 );
 
 -- Cria a tabela Servico caso não exista
-create table if not exists Servico (
+CREATE TABLE  servico (
 	id_servico			int auto_increment primary key,
     id				    int,
     titulo              VARCHAR(100),

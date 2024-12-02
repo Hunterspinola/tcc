@@ -262,7 +262,7 @@ border-radius: 2rem;
 /*-------------------FIM ICONES---------------*/
 /*-------------------INICIO CARDS---------------*/
 
-/*-------------------FIM CARDS---------------*/
+
 .card-container{
   display: flex;
   gap: 20px;
@@ -320,5 +320,5 @@ border-radius: 2rem;
   color: #1b0c1a;
 }
 
-
+/*-------------------FIM CARDS---------------*/
 
