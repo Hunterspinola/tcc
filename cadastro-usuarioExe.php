@@ -16,6 +16,7 @@
       $usuario = $_POST['usuario'];
       $celular = $_POST['celular'];
       $email = $_POST['email'];
+      $profissional = $_POST['profissional'];
       $senha = $_POST['senha'];
       $confirmasenha = $_POST['confirmasenha'];
 
@@ -26,11 +27,12 @@
       echo "Usuário: $usuario<br>";
       echo "Celular: $celular<br>";
       echo "Email: $email<br>";
+      echo "É profissional: $profissional<br>";
       echo "Senha: $senha<br>";
       echo "Confirmar senha: $confirmasenha<br>";
 
       // Insere em cliente
-      $sql = "INSERT INTO Cliente (nome, sobrenome, nome_user, celular, email, senha_cliente) VALUES ('$primeironome', '$sobrenome', '$usuario', '$celular', '$email', '$senha')";
+      $sql = "INSERT INTO usuario (nome, sobrenome, user_name, email, profissional, senha) VALUES ('$primeironome', '$sobrenome', '$usuario', '$email', '$profissional', '$senha')";
 
 
       // Executa a query no banco
@@ -46,7 +48,7 @@
 
       // Fecha a conexão com o banco de dados
       mysqli_close($con);
-      header("Location: index.php");
+      header('Location: index.php#serviços');
     ?>
 </body>
 </html>

@@ -11,7 +11,7 @@ if (empty($nome_user) || empty($senha)) {
 }
 
 // Prepara a consulta SQL
-$sql = "SELECT * FROM Usuario WHERE nome_user = '$nome_user'";
+$sql = "SELECT * FROM usuario WHERE user_name = '$nome_user'";
 
 // Executa a consulta SQL e verifica se ocorreu algum erro
 $result = mysqli_query($con, $sql);
@@ -33,8 +33,10 @@ if (mysqli_num_rows($result) > 0) {
         exit;
     } else {
         echo "<h1>Senha inválida! Tente novamente</h1>";
+        header('Location: login.html');
     }
 } else {
     echo "<h1>Usuário não encontrado</h1>";
+    header('Location: login.html');
 }
 ?>

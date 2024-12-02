@@ -16,7 +16,7 @@
         <a href="#" class="logo">AGAMA<span>.</span></a>
 
       <nav class="navbar">
-        <a href="#">voltar</a>
+        <a href="index.php">voltar</a>
       </nav>
       
       <div class="icons">

@@ -40,7 +40,7 @@
 <div class="container">
 
       <div class="form">
-        <form action="cadastro-clienteExe.php" method="post">
+        <form action="cadastro-usuarioExe.php" method="post">
           <!--action que leva para a pág que faz o cad no banco atráves do method POST-->
           <div class="form-header">
             <div class="title">
@@ -73,6 +73,11 @@
             <div class="input-box">
               <label for="email">E-mail</label>
               <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="input-box">
+              <label for="profissional">Você é um prestador de serviços?</label>
+              <input type="radio" name="profissional" id="profissional" required> Sim
+              <input type="radio" name="profissional" id="profissional" required checked> Não
             </div>
             <div class="input-box">
               <label for="senha">Senha</label>
