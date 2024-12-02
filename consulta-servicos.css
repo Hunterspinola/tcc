@@ -139,5 +139,5 @@ tr:nth-child(even) {
 h1.cs {
   text-align: center;
   margin: 20px auto;
-  display: block; /* Garante que o h1 seja tratado como bloco */
+  display: block; /* h1 como bloco */
 }
