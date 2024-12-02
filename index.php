@@ -31,20 +31,38 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#sobre">Sobre</a>
-            <a href="#serviços">Serviços</a>
-            <a href="#avaliaçao">Avaliações</a>
+            <a href="consulta-servicos.php">Serviços</a>
             <a href="#contato">Contato</a>
             <a href="login.html">Entrar</a>
+<<<<<<< HEAD
             <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['usuario']['profissional'] === 1)) : ?>
             <a href="cadastro-servicos.php">Teste</a>
             <?php endif; ?>
+=======
+            <a href="cadastro-servicos.php">Cadastrar serviços</a>
+            <a href="pagprincipal.html">Teste2</a>
+>>>>>>> 265deeb99f173d7da1e0fe62878981cc5cb681f0
         </nav>
 
-
-        <div class="icons">
-            <a href="login.html" class="fas fa-heart"></a>
-            <a href="login.html" class="fas fa-shopping-cart"></a>
+    <div class="icons">
+      <i class="fa fa-bars" title="Click me!"></i>
+      <ul class="nav-links">
+        <li>
             <a href="login.html" class="fas fa-user"></a>
+<<<<<<< HEAD
+=======
+            <div class="dropdown-content">
+            <a href="#">Sair</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+        
+           
+            
+
+
+>>>>>>> 265deeb99f173d7da1e0fe62878981cc5cb681f0
         </div>
     </header>
     <!-- -------------------------FIM MENU-------------------- -->
@@ -167,105 +185,7 @@
 
     <!--------------------------FIM ICONES------------------------------>
 
-    <!-------------------------INICIO AVALIAÇÕES------------------------->
-
-    <section class="avaliaçao" id="avaliaçao">
-
-        <h1 class="heading">Quem usa <span>recomenda!</span></h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <div class="user">
-                    <img src="../tcc/imagens.img/io.jpg" alt="">
-                    <div class="user-in">
-                        <h3>Italiana da Shopee</h3>
-                        <span>@gigispin</span>
-                    </div>
-                </div>
-                <div class="strelas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>SLK bolo bão de mais. Não imaginei que os serviços culinarios dariam certo no site (mas eu queimei a
-                    cozinha tentando fazer um bolo e precisei pedir um novo kkk)
-                    mas me enganei, atendimento rápido e o bolo chegou intacto. acho que vou aproveitar e contratar um
-                    pintor para pintar a parede queimada
-                </p>
-
-            </div>
-
-            <div class="box">
-                <div class="user">
-                    <img src="../tcc/imagens.img/mary.jpg" alt="">
-                    <div class="user-in">
-                        <h3>rainha do rj</h3>
-                        <span>@maryqueen</span>
-                    </div>
-                </div>
-                <div class="strelas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Contratei um pedreiro para fazer uma área nova na minha casa. A contratação foi super facil e o
-                    atendimento maravilhoso, além de um pedreiro lindo rsrs.</p>
-
-            </div>
-
-            <div class="box">
-                <div class="user">
-                    <img src="../tcc/imagens.img/naclara.jpg" alt="">
-                    <div class="user-in">
-                        <h3>Verdinha da paz</h3>
-                        <span>@naclara</span>
-                    </div>
-                </div>
-                <div class="strelas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Contratei um mecanico para arrumar meu carro em casa pq meio que eu entrei com ele dentro da sala
-                    (tirei carta ontem rsrs)
-                    como um guincho é muito caro eu precisava que ele viesse até minha casa. Também chamei um pedreiro,
-                    sabe para concertar o rombo na parede. Eles vieram e graças a DEUS antes do meu pai chegar. Valeu
-                    suuuuper a pena!!!!!!!
-                </p>
-
-            </div>
-
-            <div class="box">
-                <div class="user">
-                    <img src="../tcc/imagens.img/naju.jpg" alt="">
-                    <div class="user-in">
-                        <h3>Legalmente loira</h3>
-                        <span>@najulinda</span>
-                    </div>
-                </div>
-                <div class="strelas">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Ótimo atendimento, preço super em conta. Contratei uma maquiadora
-                    incrivel. Foi super facil usar o site, cliquei, agendei, e ela veio!!!
-                </p>
-
-            </div>
-        </div>
-    </section>
-
-    <!-------------------------------FIM AVALIAÇÕES---------------------->
+   
 
     <!-------------------------------INICIO CONTATO---------------------->
 
