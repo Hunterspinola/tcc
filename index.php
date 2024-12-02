@@ -37,8 +37,11 @@
       <ul class="nav-links">
         <li>
             <a href="login.html" class="fas fa-user"></a>
+            <?php if(isset($_SESSION['login'])) : ?>
+                Olá <?php echo $_SESSION['login']['usuario']['nome'] ?>!
             <div class="dropdown-content">
-            <a href="#">Sair</a>
+            <a href="includes/sair.php">Sair</a>
+            <?php endif ?>
           </div>
         </li>
       </ul>
@@ -226,8 +229,6 @@
             </div>
 
         </div>
-
-        <div class="creditos">created by<span> agamacompany and help mr. web designer</span> all rights reserved</div>
 
     </section>
 
