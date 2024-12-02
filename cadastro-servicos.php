@@ -47,7 +47,7 @@
                     <input type="text" name="texto" id="texto" />
                 </div>
                 <div class="input-box">
-                    <label for="telefone">telefone</label>
+                    <label for="telefone">Telefone do profissional</label>
                     <input type="text" name="telefone" id="telefone" />
                 </div>
     <!-- ----------------------------------------------------FIM CADASTRO SERVIÇOS QUESTIONS------------------------------------------------------------------- -->
