@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="consulta-servicos.css">
     <title>Document</title>
 </head>
 <body>
+     <!--------------------------------INICIO MENU-------------------->
+     <header>
+      <input type="checkbox" name="" id="risquinhos">
+        <label for="risquinhos" class="fas fa-bars"></label>
+        <a href="#" class="logo">AGAMA<span>.</span></a>
+        <h1 class="cs" >Consulta de Serviços</h1>
+      
+        <nav class="navbar">
+        <a href="index.php">voltar</a>
+      </nav>
+      
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+      </div>
+    </header>
+    <!-- ----------------------FIM MENU----------------------------------->
+        
 <section>
-        <div class="principal flex inverter_column">
+        <div class="consulta">
             <?php
             include('./includes/conexao.php');
             $sql ="SELECT ser.id, ser.titulo, ser.texto, ser.telefone , foto FROM servico ser";
             $result = mysqli_query($con, $sql);
             ?>
-            <h1>Consulta de Serviços</h1>
+           
             <table class="content-table">
                 <thead>
                     <tr>
