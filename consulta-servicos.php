@@ -11,11 +11,11 @@
      <header>
       <input type="checkbox" name="" id="risquinhos">
         <label for="risquinhos" class="fas fa-bars"></label>
-        <a href="#" class="logo">AGAMA<span>.</span></a>
+        <a href="index.php" class="logo">AGAMA<span>.</span></a>
         <h1 class="cs" >Consulta de Serviços</h1>
       
         <nav class="navbar">
-        <a href="index.php">voltar</a>
+        <a href="pagprincipal.html">Pesquisar</a>
       </nav>
       
       <div class="icons">
