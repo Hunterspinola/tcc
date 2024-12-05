@@ -109,14 +109,7 @@
 
     <h1 class="servicons"><span> Esses são alguns </span> dos serviços oferecidos </h1>
 
-     <!-------------------------INICIO BARRA DE PESQUISA---------------------->
-     <section class="barrapesq">
-     <div class="search-container">
-        <input type="text" placeholder="Procurar serviço...">
-        <button>Pesquisar</button>
-     </div>
-    </section>
-    <!-------------------------FIM BARRA DE PESQUISA-------------------------->
+   
 
     <section class="iconis-conteiner">
 
@@ -168,6 +161,9 @@
             <div class="infor">
                 <h3><a href="login.html">Beleza</a></h3>
             </div>
+        </div>
+        <div class="iconis">
+            <h2>Para encontrar mais serviços faça login no nosso site <a href="login.html">aqui</a> </h2>
         </div>
 
     </section>
