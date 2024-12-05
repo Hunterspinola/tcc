@@ -5,8 +5,9 @@ include('includes/conexao.php');
     $result = mysqli_query($con, $sql);
     if ($result)
         echo "<h2>Dados deletados!</h2>";
-        else {
-        echo "<h2>Erro ao deletar!</h2>";
-        echo "<h2>" . mysqli_error($con) . "</h2>";
-        }
+    else {
+            echo "<h2>Erro ao deletar!</h2>";
+            echo "<h2>" . mysqli_error($con) . "</h2>";
+    }
+    header('Location: consulta-servicos.php');
 ?>
