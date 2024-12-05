@@ -28,6 +28,7 @@
             <a href="consulta-servicos.php">Serviços</a>
             <?php endif; ?>
             <a href="#contato">Contato</a>
+            <?php if(!isset($_SESSION))?>
             <a href="login.html">Entrar</a>
             <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['profissional'] === 1)):?>
             <a href="cadastro-servicos.php">Cadastrar serviços</a>

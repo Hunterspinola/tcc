@@ -17,10 +17,30 @@ if (isset($_GET['query'])) {
 
     // Verifica se há resultados
     if ($result->num_rows > 0) {
+        // Inicia a tabela
+        echo "<table border='1'>
+                <tr>
+                    <th>Título</th>
+                    <th>Foto</th>
+                    <th>Texto</th>
+                    <th>Telefone</th>
+                </tr>";
+        
         // Exibe os resultados
         while ($row = $result->fetch_assoc()) {
-            echo "Resultado: " . $row['titulo', 'foto', 'texto', 'telefone'] . "<br>";
+            // Ajuste o caminho da imagem aqui
+            $caminhoImagem = '../fotos/' . htmlspecialchars($row['foto']); // Caminho relativo
+
+            echo "<tr>
+                    <td>" . htmlspecialchars($row['titulo']) . "</td>
+                    <td><img src='" . $caminhoImagem . "' alt='Foto do serviço' style='width:100px; height:auto;'></td>
+                    <td>" . htmlspecialchars($row['texto']) . "</td>
+                    <td>" . htmlspecialchars($row['telefone']) . "</td>
+                  </tr>";
         }
+        
+        // Fecha a tabela
+        echo "</table>";
     } else {
         echo "Nenhum resultado encontrado.";
     }
