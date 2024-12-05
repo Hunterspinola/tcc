@@ -129,6 +129,7 @@ header .fa-bars {
 }
 .form{
   width: 84%;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,6 +175,9 @@ align-items: center;
   flex-direction: column;
   margin-bottom: 2rem;
 }
+input[type="radio"]{
+
+}
 .input-box input{
   margin: 0.6rem 0;
   padding: 1rem 1.5rem;
@@ -198,6 +202,11 @@ align-items: center;
 }
 .input-box input ::placeholder{
   color: #1b0c1a;
+}
+.profissional input{
+  cursor: pointer;
+  border: 2px solid #9c4c98;
+  
 }
 /* ------------------------------ SELECT ----------------------------- */
 .input-box h3{
