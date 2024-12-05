@@ -38,8 +38,13 @@
 <section>
         <div class="consulta">
             <?php
+            session_start();
+            $id_usuario = $_SESSION['login']['id'];
             include('includes/conexao.php');
-            $sql ="SELECT ser.id_servico id, ser.id id_usuario,  ser.titulo, ser.texto, ser.telefone , foto FROM servico ser";
+            $sql ="SELECT ser.id_servico id, ser.id id_usuario,  
+                    ser.titulo, ser.texto, ser.telefone , foto,  usu.nome
+                   FROM servico ser
+                   left join usuario usu on usu.id = ser.id";
             $result = mysqli_query($con, $sql);
             ?>
            
@@ -47,6 +52,7 @@
                 <thead>
                     <tr>
                         <th>Foto</th>
+                        <th>Nome</th>
                         <th>Serviço</th>
                         <th>Descrição</th>
                         <th>Telefone</th>
@@ -54,7 +60,7 @@
                 </thead>
                 <tbody>
                     <?php
-                    session_start();
+                    
                     while ($row = mysqli_fetch_array($result)) {
                         
                         echo "<tr>";
@@ -64,10 +70,11 @@
                         else{
                             echo"<td><img src='".$row['foto']."' width='80' height='100'/></td>";
                         }  
+                        echo "<td>" . $row['nome'] . "</td>";
                         echo "<td>" . $row['titulo'] . "</td>";
                         echo "<td>" . $row['texto'] . "</td>";
                         echo "<td>" . $row['telefone'] . "</td>";
-                        if($_SESSION['login']['id'] == $row['id_usuario'] ){
+                        if($id_usuario == $row['id_usuario'] ){
                         echo "<td><a href='deleta-servico.php?id=" . $row['id'] . "'>Deletar</a></td>";
                         }else{
                             echo "<td></td>";
