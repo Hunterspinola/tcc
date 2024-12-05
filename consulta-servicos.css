@@ -141,3 +141,42 @@ h1.cs {
   margin: 20px auto;
   display: block; /* h1 como bloco */
 }
+
+.container{
+  background-color:#ffffff;
+  border:solid 2px #441F42;
+  border-radius:10px;
+  width:310px;
+  height:32px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:191px;
+  
+}
+#txtBusca ::placeholder{
+  color: #f2f2f2;
+}
+
+#btnBusca{
+  border:none;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:104px;
+  font-weight:bold;
+  background:#441F42;
+  color: #e6d4e0;
+  margin-left: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#divBusca img{
+  float:left;
+}
