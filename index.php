@@ -24,12 +24,14 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#sobre">Sobre</a>
+            <?php if((isset($_SESSION['login'])) && ($_SESSION['login'])) : ?>
             <a href="consulta-servicos.php">Serviços</a>
+            <?php endif; ?>
             <a href="#contato">Contato</a>
             <a href="login.html">Entrar</a>
-            <a href="cadastro-servicos.php">Teste</a>
+            <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['profissional'] === 1)):?>
             <a href="cadastro-servicos.php">Cadastrar serviços</a>
-            <a href="pagprincipal.html">Teste2</a>
+            <?php endif?>
         </nav>
 
     <div class="icons">
@@ -38,7 +40,7 @@
         <li>
             <a href="login.html" class="fas fa-user"></a>
             <?php if(isset($_SESSION['login'])) : ?>
-                Olá <?php echo $_SESSION['login']['usuario']['nome'] ?>!
+                Olá <?php echo $_SESSION['login']['nome'] ?>!
             <div class="dropdown-content">
             <a href="includes/sair.php">Sair</a>
             <?php endif ?>
