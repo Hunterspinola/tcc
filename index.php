@@ -28,11 +28,12 @@
             <a href="consulta-servicos.php">Serviços</a>
             <?php endif; ?>
             <a href="#contato">Contato</a>
-            <?php if(!isset($_SESSION))?>
+            <?php if(!isset($_SESSION['login'])) : ?>
             <a href="login.html">Entrar</a>
+            <?php endif; ?>
             <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['profissional'] === 1)):?>
             <a href="cadastro-servicos.php">Cadastrar serviços</a>
-            <?php endif?>
+            <?php endif; ?>
         </nav>
 
     <div class="icons">
