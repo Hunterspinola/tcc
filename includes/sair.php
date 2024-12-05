@@ -5,5 +5,5 @@
     //destroi a sessão
     session_destroy();
     //volta para a página inicial
-    header('Location: ../login.html');
+    header('Location: ../index.php');
 ?>

@@ -28,10 +28,12 @@
             <a href="consulta-servicos.php">Serviços</a>
             <?php endif; ?>
             <a href="#contato">Contato</a>
+            <?php if(!isset($_SESSION['login'])) : ?>
             <a href="login.html">Entrar</a>
-            <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['profissional'] === 1)):?>
+            <?php endif; ?>
+            <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['profissional'] == 1)):?>
             <a href="cadastro-servicos.php">Cadastrar serviços</a>
-            <?php endif?>
+            <?php endif; ?>
         </nav>
 
     <div class="icons">
@@ -66,8 +68,12 @@
             <h3>Serviços perto de você</h3>
             <span> Profissionais de confiança </span>
             <p>Venha conhecer os serviços que a equipe Agama têm a oferecer perto da sua casa</p>
-
+            <?php if(!isset($_SESSION['login'])) : ?>
             <a href="login.html" class="btn">contrate agora</a>
+            <?php endif; ?>
+            <?php if(isset($_SESSION['login'])) : ?>
+            <a href="pagprincipal.html" class="btn">contrate agora</a>
+            <?php endif; ?>
         </div>
 
     </section>
@@ -109,14 +115,7 @@
 
     <h1 class="servicons"><span> Esses são alguns </span> dos serviços oferecidos </h1>
 
-     <!-------------------------INICIO BARRA DE PESQUISA---------------------->
-     <section class="barrapesq">
-     <div class="search-container">
-        <input type="text" placeholder="Procurar serviço...">
-        <button>Pesquisar</button>
-     </div>
-    </section>
-    <!-------------------------FIM BARRA DE PESQUISA-------------------------->
+   
 
     <section class="iconis-conteiner">
 
@@ -168,6 +167,9 @@
             <div class="infor">
                 <h3><a href="login.html">Beleza</a></h3>
             </div>
+        </div>
+        <div class="iconis">
+            <h2>Para encontrar mais serviços faça login no nosso site <a href="login.html">aqui</a> </h2>
         </div>
 
     </section>
