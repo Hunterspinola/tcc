@@ -68,8 +68,12 @@
             <h3>Serviços perto de você</h3>
             <span> Profissionais de confiança </span>
             <p>Venha conhecer os serviços que a equipe Agama têm a oferecer perto da sua casa</p>
-
+            <?php if(!isset($_SESSION['login'])) : ?>
             <a href="login.html" class="btn">contrate agora</a>
+            <?php endif; ?>
+            <?php if(isset($_SESSION['login'])) : ?>
+            <a href="pagprincipal.html" class="btn">contrate agora</a>
+            <?php endif; ?>
         </div>
 
     </section>
