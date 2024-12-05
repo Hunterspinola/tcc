@@ -38,7 +38,7 @@
 <section>
         <div class="consulta">
             <?php
-            include('./includes/conexao.php');
+            include('includes/conexao.php');
             $sql ="SELECT ser.id_servico id, ser.id id_usuario,  ser.titulo, ser.texto, ser.telefone , foto FROM servico ser";
             $result = mysqli_query($con, $sql);
             ?>
@@ -47,7 +47,6 @@
                 <thead>
                     <tr>
                         <th>Foto</th>
-                        <th>Nome do Profissional</th>
                         <th>Serviço</th>
                         <th>Descrição</th>
                         <th>Telefone</th>
@@ -65,7 +64,6 @@
                         else{
                             echo"<td><img src='".$row['foto']."' width='80' height='100'/></td>";
                         }  
-                        echo "<td>" . $row['id'] . "</td>";
                         echo "<td>" . $row['titulo'] . "</td>";
                         echo "<td>" . $row['texto'] . "</td>";
                         echo "<td>" . $row['telefone'] . "</td>";
