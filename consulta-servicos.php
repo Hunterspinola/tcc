@@ -9,18 +9,14 @@
 <body>
      <!--------------------------------INICIO MENU-------------------->
      <header>
+     
       <input type="checkbox" name="" id="risquinhos">
         <label for="risquinhos" class="fas fa-bars"></label>
         <a href="index.php" class="logo">AGAMA<span>.</span></a>
+       
         <h1 class="cs" >Consulta de Serviços</h1>
-      
         <nav class="navbar">
-        <div class="container">
-        <form method="GET" action="./includes/busca.php">
-            <input type="text" name="query" placeholder="Digite sua pesquisa...">
-            <input type="submit" value="Buscar">
-        </form>
-        </div>
+        <a href="index.php">voltar</a>
       </nav>
       
       <div class="icons">
@@ -31,6 +27,14 @@
     </header>
     <!-- ----------------------FIM MENU----------------------------------->
         
+    <nav class="navbar">
+        <div class="container">
+        <form method="GET" action="./includes/busca.php">
+            <input type="text" name="query" id="txtBusca" placeholder="Digite sua pesquisa...">
+            <input type="submit" id="btnBusca" value="Buscar">
+        </form>
+        </div>
+      </nav>
 <section>
         <div class="consulta">
             <?php

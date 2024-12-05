@@ -15,11 +15,6 @@ html {
 }
 
 
-section {
-  padding: 2rem 9%;
-}
-
-
 body {
   box-sizing: border-box;
   width: 100%;
@@ -104,14 +99,23 @@ header .fa-bars {
 
 /*----------------------------------------------FIM MENU--------------------------------------*/
 /*-------------------------------------------INICIO EXIBIÇÃO----------------------------------*/
+section{
+  background-color: red;
+  width: 80%;
+}
 
 table {
-  width: 80%;
-  margin: 20px 0;
+  width: 100%;
+ 
   border-collapse: collapse;
   background-color: #e6d4e0;
   box-shadow: 0 0 10px rgba(136, 71, 136, 0.644);
 }
+.consulta {
+  width: 100%;
+
+}
+
 
 table, th, td {
   border: 1px solid rgba(136, 71, 136, 0.644);
@@ -140,4 +144,43 @@ h1.cs {
   text-align: center;
   margin: 20px auto;
   display: block; /* h1 como bloco */
+}
+
+.container{
+  background-color:#ffffff;
+  border:solid 2px #441F42;
+  border-radius:10px;
+  width:310px;
+  height:32px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:191px;
+  
+}
+#txtBusca ::placeholder{
+  color: #f2f2f2;
+}
+
+#btnBusca{
+  border:none;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:104px;
+  font-weight:bold;
+  background:#441F42;
+  color: #e6d4e0;
+  margin-left: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#divBusca img{
+  float:left;
 }
