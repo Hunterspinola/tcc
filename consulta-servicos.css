@@ -15,11 +15,6 @@ html {
 }
 
 
-section {
-  padding: 2rem 9%;
-}
-
-
 body {
   box-sizing: border-box;
   width: 100%;
@@ -104,14 +99,23 @@ header .fa-bars {
 
 /*----------------------------------------------FIM MENU--------------------------------------*/
 /*-------------------------------------------INICIO EXIBIÇÃO----------------------------------*/
+section{
+  background-color: red;
+  width: 80%;
+}
 
 table {
-  width: 80%;
-  margin: 20px 0;
+  width: 100%;
+ 
   border-collapse: collapse;
   background-color: #e6d4e0;
   box-shadow: 0 0 10px rgba(136, 71, 136, 0.644);
 }
+.consulta {
+  width: 100%;
+
+}
+
 
 table, th, td {
   border: 1px solid rgba(136, 71, 136, 0.644);
