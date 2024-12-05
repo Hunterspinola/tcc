@@ -29,7 +29,7 @@ if (isset($_GET['query'])) {
         // Exibe os resultados
         while ($row = $result->fetch_assoc()) {
             // Ajuste o caminho da imagem aqui
-            $caminhoImagem = '../fotos/' . htmlspecialchars($row['foto']); // Caminho relativo
+            $caminhoImagem = '../' . htmlspecialchars($row['foto']); // Caminho relativo
 
             echo "<tr>
                     <td>" . htmlspecialchars($row['titulo']) . "</td>

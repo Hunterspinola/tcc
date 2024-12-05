@@ -31,7 +31,7 @@
             <?php if(!isset($_SESSION['login'])) : ?>
             <a href="login.html">Entrar</a>
             <?php endif; ?>
-            <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['profissional'] === 1)):?>
+            <?php if((isset($_SESSION['login'])) && ($_SESSION['login']['profissional'] == 1)):?>
             <a href="cadastro-servicos.php">Cadastrar serviços</a>
             <?php endif; ?>
         </nav>

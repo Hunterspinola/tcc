@@ -15,7 +15,12 @@
         <h1 class="cs" >Consulta de Serviços</h1>
       
         <nav class="navbar">
-        <a href="pagprincipal.html">Pesquisar</a>
+        <div class="container">
+        <form method="GET" action="./includes/busca.php">
+            <input type="text" name="query" placeholder="Digite sua pesquisa...">
+            <input type="submit" value="Buscar">
+        </form>
+        </div>
       </nav>
       
       <div class="icons">
