@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Exe.css">
   <title>Cadastro Cliente</title>
 </head>
 <body>
@@ -22,14 +23,14 @@
 
       // Mostra os dados coletados
       echo "<h1>Dados do Cliente</h1>";
-      echo "Nome: $primeironome<br>";
-      echo "Sobrenome: $sobrenome<br>";
-      echo "Usuário: $usuario<br>";
-      echo "Celular: $celular<br>";
-      echo "Email: $email<br>";
-      echo "É profissional: $profissional<br>";
-      echo "Senha: $senha<br>";
-      echo "Confirmar senha: $confirmasenha<br>";
+      echo "<h3>Nome: $primeironome</h3><br>";
+      echo "<h3>Sobrenome: $sobrenome</h3><br>";
+      echo "<h3>Usuário: $usuario</h3><br>";
+      echo "<h3>Celular: $celular</h3><br>";
+      echo "<h3>Email: $email</h3><br>";
+      echo "<h3>É profissional: $profissional</h3><br>";
+      echo "<h3>Senha: $senha</h3><br>";
+      echo "<h3>Confirmar senha: $confirmasenha</h3><br>";
 
       // Insere em cliente
       $sql = "INSERT INTO usuario (nome, sobrenome, user_name, email, profissional, senha) VALUES ('$primeironome', '$sobrenome', '$usuario', '$email', '$profissional', '$senha')";
