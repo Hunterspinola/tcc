@@ -19,8 +19,10 @@
 
 
     <div class="container">
-      <input type="search" id="busca" name="q" placeholder="Procurar serviço...">
-      <button class="pesquisa" type="submit">Pesquisar</button>
+      <form method="GET" action="./includes/busca.php">
+        <input type="text" name="query" placeholder="Digite sua pesquisa...">
+        <input type="submit" value="Buscar">
+    </form>
     </div>
 
     <div class="sus">

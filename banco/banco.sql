@@ -6,7 +6,7 @@ create database Agama;
 -- Utiliza o banco
 use Agama;
 
-CREATE TABLE if not exists usuario (
+CREATE TABLE usuario (
     id              int NOT NULL  AUTO_INCREMENT,
     nome            varchar(50) NOT NULL,
     sobrenome		varchar(50) not null,
