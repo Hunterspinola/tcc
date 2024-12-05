@@ -35,7 +35,7 @@
         <div class="consulta">
             <?php
             include('./includes/conexao.php');
-            $sql ="SELECT ser.id, ser.titulo, ser.texto, ser.telefone , foto FROM servico ser";
+            $sql ="SELECT ser.id_servico id, ser.id id_usuario,  ser.titulo, ser.texto, ser.telefone , foto FROM servico ser";
             $result = mysqli_query($con, $sql);
             ?>
            
@@ -43,6 +43,7 @@
                 <thead>
                     <tr>
                         <th>Foto</th>
+                        <th>Nome do Profissional</th>
                         <th>Serviço</th>
                         <th>Descrição</th>
                         <th>Telefone</th>
@@ -50,6 +51,7 @@
                 </thead>
                 <tbody>
                     <?php
+                    session_start();
                     while ($row = mysqli_fetch_array($result)) {
                         
                         echo "<tr>";
@@ -59,10 +61,15 @@
                         else{
                             echo"<td><img src='".$row['foto']."' width='80' height='100'/></td>";
                         }  
+                        echo "<td>" . $row['id'] . "</td>";
                         echo "<td>" . $row['titulo'] . "</td>";
                         echo "<td>" . $row['texto'] . "</td>";
                         echo "<td>" . $row['telefone'] . "</td>";
-                       
+                        if($_SESSION['login']['id'] == $row['id_usuario'] ){
+                        echo "<td><a href='deleta-servico.php?id=" . $row['id'] . "'>Deletar</a></td>";
+                        }else{
+                            echo "<td></td>";
+                        }
                         echo "</tr>";
                     }
                     ?>
