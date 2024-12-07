@@ -56,6 +56,7 @@
                         <th>Serviço</th>
                         <th>Descrição</th>
                         <th>Telefone</th>
+                        <th>Deletar</th>
                     </tr>
                 </thead>
                 <tbody>
