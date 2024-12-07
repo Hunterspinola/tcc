@@ -168,7 +168,7 @@ align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1rem 0;
-  width: 95%;
+  width: 93%;
 }
 .input-box{
   display: flex;
@@ -263,6 +263,59 @@ color: #E6D4E0;
 .volta-login  :hover{
   color: #E6D4E0;
 }
+/* Estilização para os botões de rádio */
+.input-boxx label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #E6D4E0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+ padding-bottom: 10px;
+}
+
+.input-boxx input[type="radio"] {
+  appearance: none; /* Remove a aparência padrão */
+  width: 22px;
+  height: 22px;
+  border: 3px solid #9c4c98;
+  border-radius: 50%; /* Deixa o botão circular */
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.input-boxx input[type="radio"]:hover {
+  background-color: #b957b4;
+  border-color: #e6d4e0;
+}
+
+/* Quando o botão de rádio é selecionado */
+.input-boxx input[type="radio"]:checked {
+  background-color: #9c4c98;
+  border-color: #E6D4E0;
+  
+}
+
+/* Adicionando um círculo interno quando selecionado */
+.input-boxx input[type="radio"]:checked::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #E6D4E0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.input-boxx{
+position: left;
+}
+
 /* ------------ FIM BOTÃO ------------------ */
 @media (max-width: 1025px) {
   
