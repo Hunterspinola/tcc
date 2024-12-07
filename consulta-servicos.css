@@ -152,6 +152,9 @@ h1.cs {
   border-radius:10px;
   width:310px;
   height:32px;
+  position: absolute;
+  top: 170px;
+
 }
 
 #txtBusca{
@@ -183,5 +186,37 @@ h1.cs {
 
 #divBusca img{
   float:left;
+}
+@media (max-width: 1025px) {
+  section{
+    padding-top: 100px;
+  }
+  
+}
+@media (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+}
+header #risquinhos:checked ~ .navbar {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.container{
+  top: 200px;
+}
+@media (max-width: 450px) {
+  .container{
+    top: 300px;
+  }
 }
 

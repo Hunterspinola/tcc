@@ -37,7 +37,7 @@
         </nav>
 
     <div class="icons">
-      <i class="fa fa-bars" title="Click me!"></i>
+    
       <ul class="nav-links">
         <li>
             <a href="login.html" class="fas fa-user"></a>
@@ -72,7 +72,7 @@
             <a href="login.html" class="btn">contrate agora</a>
             <?php endif; ?>
             <?php if(isset($_SESSION['login'])) : ?>
-            <a href="pagprincipal.html" class="btn">contrate agora</a>
+            <a href="consulta-servicos.php" class="btn">contrate agora</a>
             <?php endif; ?>
         </div>
 

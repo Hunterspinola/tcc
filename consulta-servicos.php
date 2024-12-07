@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="consulta-servicos.css">
     <title>Consultar Serviços</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css ">
+
 </head>
 <body>
      <!--------------------------------INICIO MENU-------------------->
@@ -20,8 +22,7 @@
       </nav>
       
       <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
+
         <a href="login.html" class="fas fa-user"></a>
       </div>
     </header>
