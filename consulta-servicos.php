@@ -27,7 +27,7 @@
     </header>
     <!-- ----------------------FIM MENU----------------------------------->
         
-    <nav class="navbar">
+    <nav class="navBar">
         <div class="container">
         <form method="GET" action="./includes/busca.php">
             <input type="text" name="query" id="txtBusca" placeholder="Digite sua pesquisa...">
@@ -52,10 +52,10 @@
                 <thead>
                     <tr>
                         <th>Foto</th>
-                        <th>Nome</th>
-                        <th>Serviço</th>
-                        <th>Descrição</th>
-                        <th>Telefone</th>
+                        <th>Nome do profissional</th>
+                        <th>Serviço oferecido</th>
+                        <th>Descrição do serviço</th>
+                        <th>Telefone para contato</th>
                         <th>Deletar</th>
                     </tr>
                 </thead>
