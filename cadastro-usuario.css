@@ -285,6 +285,7 @@ color: #E6D4E0;
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
+
 }
 
 /* Efeito ao passar o mouse */
@@ -313,7 +314,7 @@ color: #E6D4E0;
   transform: translate(-50%, -50%);
 }
 .input-boxx{
-position: left;
+
 }
 
 /* ------------ FIM BOTÃO ------------------ */
@@ -420,6 +421,7 @@ position: left;
   margin-top: 130px;
   height: 550px;
   width: 100%;
+
  }
  .form-header h1{
   
@@ -436,6 +438,13 @@ position: left;
 .left-cadastro h1{
   padding-left: 10px;
   padding-top: 0;
+}
+.input-boxx{
+
+    display: flex
+;
+    flex-direction: column;
+    margin-bottom: 2rem;
 }
 }
 
@@ -462,7 +471,7 @@ position: left;
   width: 250px;
  }
  .form{
-  height: 600px;
+  height: 650px;
  }
 
 }
