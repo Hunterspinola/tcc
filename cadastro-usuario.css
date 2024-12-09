@@ -313,9 +313,14 @@ color: #E6D4E0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.input-boxx{
-
+.op {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaçamento entre os elementos */
+  margin-bottom: 2rem; /* Espaçamento inferior */
+  
 }
+
 
 /* ------------ FIM BOTÃO ------------------ */
 @media (max-width: 1025px) {
@@ -446,6 +451,18 @@ color: #E6D4E0;
     flex-direction: column;
     margin-bottom: 2rem;
 }
+.op {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espaçamento uniforme entre os botões */
+}
+.input-boxx {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Espaçamento entre label e botões */
+}
+
+
 }
 
 /* Para telas menores que 450px */
@@ -471,7 +488,7 @@ color: #E6D4E0;
   width: 250px;
  }
  .form{
-  height: 650px;
+  height: 710px;
  }
 
 }
@@ -481,47 +498,5 @@ color: #E6D4E0;
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*Midia quer*/
   
   
