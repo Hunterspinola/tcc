@@ -285,6 +285,7 @@ color: #E6D4E0;
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
+
 }
 
 /* Efeito ao passar o mouse */
@@ -312,9 +313,14 @@ color: #E6D4E0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.input-boxx{
-position: left;
+.op {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaçamento entre os elementos */
+  margin-bottom: 2rem; /* Espaçamento inferior */
+  
 }
+
 
 /* ------------ FIM BOTÃO ------------------ */
 @media (max-width: 1025px) {
@@ -420,6 +426,7 @@ position: left;
   margin-top: 130px;
   height: 550px;
   width: 100%;
+
  }
  .form-header h1{
   
@@ -437,6 +444,25 @@ position: left;
   padding-left: 10px;
   padding-top: 0;
 }
+.input-boxx{
+
+    display: flex
+;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.op {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espaçamento uniforme entre os botões */
+}
+.input-boxx {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Espaçamento entre label e botões */
+}
+
+
 }
 
 /* Para telas menores que 450px */
@@ -462,7 +488,7 @@ position: left;
   width: 250px;
  }
  .form{
-  height: 600px;
+  height: 710px;
  }
 
 }
@@ -472,47 +498,5 @@ position: left;
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*Midia quer*/
   
   
