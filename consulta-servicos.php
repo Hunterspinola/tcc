@@ -43,7 +43,7 @@
             $id_usuario = $_SESSION['login']['id'];
             include('includes/conexao.php');
             $sql ="SELECT ser.id_servico id, ser.id id_usuario,  
-                    ser.titulo, ser.texto, ser.telefone , foto,  usu.nome
+                    ser.titulo, ser.texto, ser.telefone, ser.cidade , foto,  usu.nome
                    FROM servico ser
                    left join usuario usu on usu.id = ser.id";
             $result = mysqli_query($con, $sql);
@@ -56,6 +56,7 @@
                         <th>Nome do profissional</th>
                         <th>Serviço oferecido</th>
                         <th>Descrição do serviço</th>
+                        <th>Cidade</th>
                         <th>Telefone para contato</th>
                         <th>Deletar</th>
                     </tr>
@@ -75,6 +76,7 @@
                         echo "<td>" . $row['nome'] . "</td>";
                         echo "<td>" . $row['titulo'] . "</td>";
                         echo "<td>" . $row['texto'] . "</td>";
+                        echo "<td>" . $row['cidade'] . "</td>";
                         echo "<td>" . $row['telefone'] . "</td>";
                         if($id_usuario == $row['id_usuario'] ){
                         echo "<td><a href='deleta-servico.php?id=" . $row['id'] . "'>Deletar</a></td>";

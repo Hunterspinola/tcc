@@ -23,6 +23,7 @@ if (isset($_GET['query'])) {
                     <th>Título</th>
                     <th>Foto</th>
                     <th>Texto</th>
+                    <th>Cidade</th>
                     <th>Telefone</th>
                 </tr>";
         
@@ -35,6 +36,7 @@ if (isset($_GET['query'])) {
                     <td>" . htmlspecialchars($row['titulo']) . "</td>
                     <td><img src='" . $caminhoImagem . "' alt='Foto do serviço' style='width:100px; height:auto;'></td>
                     <td>" . htmlspecialchars($row['texto']) . "</td>
+                    <td>" . htmlspecialchars($row['cidade']) . "</td>
                     <td>" . htmlspecialchars($row['telefone']) . "</td>
                   </tr>";
         }

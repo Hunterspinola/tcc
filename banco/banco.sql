@@ -27,5 +27,6 @@ CREATE TABLE  servico (
     texto               VARCHAR(100),
     telefone            CHAR(15),
     foto                VARCHAR(100),
+    cidade				VARCHAR(100),
     foreign key(id) references usuario(id)
 );

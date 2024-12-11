@@ -50,6 +50,10 @@
                     <label for="telefone">Telefone do profissional</label>
                     <input type="text" name="telefone" id="telefone" />
                 </div>
+                <div class="input-box">
+                    <label for="cidade">Cidade onde o serviço é ofertado</label>
+                    <input type="text" name="cidade" id="cidade" />
+                </div>
     <!-- ----------------------------------------------------FIM CADASTRO SERVIÇOS QUESTIONS------------------------------------------------------------------- -->
                 <div class="cadastro-buton">
                 <button type="submit">Cadastrar serviço</button>

@@ -46,13 +46,15 @@
             $titulo = $_POST['titulo'];
             $texto = $_POST['texto'];
             $telefone = $_POST['telefone'];
+            $cidade = $_POST['cidade'];
             echo "<h1>Dados do serviço</h1>";
             echo "<h3>titulo: $titulo</h3></br>";
             echo "<h3>texto: $texto</h3></br>";
             echo "<h3>telefone: $telefone</h3></br>";
+            echo "<h3>cidade: $cidade</h3></br>";
             $id_usuario =  $_SESSION['login']['id'];
-            $sql = "INSERT INTO Servico (titulo, texto, telefone, foto, id)";
-            $sql .= " VALUES('$titulo', '$texto', '$telefone', '$nome_foto', $id_usuario)";
+            $sql = "INSERT INTO Servico (titulo, texto, telefone, foto, id, cidade)";
+            $sql .= " VALUES('$titulo', '$texto', '$telefone', '$nome_foto', $id_usuario, '$cidade')";
             echo $sql;
             // Executa comando no banco de dados
             $result =  mysqli_query($con, $sql);

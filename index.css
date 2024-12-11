@@ -124,7 +124,7 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../tcc/tela.jpg)no-repeat;
+    background: url(tela.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -509,33 +509,6 @@ border-radius: 2rem;
 
 
 /*-------------------------------FIM FOOTER----------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Midia quer*/
 @media(max-width:991px) {
