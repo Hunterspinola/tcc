@@ -1,3 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Exe.css">
+    <title>Login</title>
+</head>
+<body>
+    <!--------------------------------INICIO MENU-------------------->
+    <header>
+      <input type="checkbox" name="" id="risquinhos">
+        <label for="risquinhos" class="fas fa-bars"></label>
+        <a href="#" class="logo">AGAMA<span>.</span></a>
+
+      <nav class="navbar">
+        <a href="index.php">voltar</a>
+      </nav>
+      
+      <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+      </div>
+    </header>
+    <!-- -----------------------------------------------------------FIM MENU---------------------------------------------------------------------------- -->
 <?php
     include('includes/conexao.php');
     $usuario = $_POST['usuario'];
@@ -19,3 +45,5 @@
         echo "<h1>Usuário não encontrado</h1>";
     }
 ?>
+</body>
+</html>

@@ -52,7 +52,7 @@
     </div>
         
            
-            
+             
 
 
         </div>
@@ -61,14 +61,13 @@
 
     <!--------------------------- INICIO DO HOME------------------->
 
-    <section class="home" id="home">
-
+    <section class="home" >
 
         <div class="content">
             <h3>Serviços perto de você</h3>
             <span> Profissionais de confiança </span>
             <p>Venha conhecer os serviços que a equipe Agama têm a oferecer perto da sua casa</p>
-            <?php if(!isset($_SESSION['login'])) : ?>
+             <?php if(!isset($_SESSION['login'])) : ?>
             <a href="login.html" class="btn">contrate agora</a>
             <?php endif; ?>
             <?php if(isset($_SESSION['login'])) : ?>
@@ -89,7 +88,7 @@
         <div class="row">
 
             <div class="imagem">
-                <img src="../tcc/imagens.img/cozina.avif" alt="">
+                <img src="../tcc/imagens.img/mec.jpeg" alt="">
                 <h3>vários tipos de serviços</h3>
             </div>
 
@@ -196,7 +195,7 @@
             </form>
 
             <div class="imagem">
-                <img src="../tcc/imagens.img/info.jpg" alt="imagem hehe">
+                <img src="../tcc/imagens.img/denovo.jpg" alt=" hehe">
             </div>
 
         </div>

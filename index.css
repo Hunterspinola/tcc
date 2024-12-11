@@ -124,10 +124,9 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../tcc/imagens.img/Design\ sem\ nome.jpg) no-repeat;
+    background: url(../tcc/tela.jpg)no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
 .home .content {
@@ -207,11 +206,11 @@ header .fa-bars {
 
 .sobre .row .imagem img {
     width: 100%;
-    border: 1.5rem solide #fff;
+    border: 1.5rem solide #000000;
     border-radius: 5rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     height: 100%;
-    object-fit: cover;
+    object-fit: cover ;
 }
 
 .sobre .row .content {
@@ -224,7 +223,7 @@ header .fa-bars {
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
-    background: #fff;
+    background: #000000;
     width: 100%;
     padding: 1rem 2rem;
     text-align: center;
@@ -291,7 +290,7 @@ header .fa-bars {
     color: #333;
     padding: 1rem;
     margin: 2rem ;
-    background: rgba(255, 51, 153, .05);
+    background: rgba(255, 51, 153, 0.521);
     margin-top: 20rem;
 }
 
