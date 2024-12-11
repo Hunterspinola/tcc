@@ -120,49 +120,49 @@
 
    
         <div class="iconis">
-            <img src="../tcc/imagens.img/ferramentaagoravai.png" alt="">
+            <img src="../tcc/imagens.img/reparos.png" alt="">
             <div class="infor">
                 <h3><a href="login.html">Reparo</a></h3>
             </div>
         </div>
 
         <div class="iconis">
-            <img src="../tcc/imagens.img/compiuter.png" alt="">
+            <img src="../tcc/imagens.img/tecnologia.png" alt="">
             <div class="infor">
                 <h3><a href="login.html">Tecnologia</a></h3>
             </div>
         </div>
 
         <div class="iconis">
-            <img src="../tcc/imagens.img/predero.png" alt="">
+            <img src="../tcc/imagens.img/construcao.png" alt="">
             <div class="infor">
                 <h3><a href="login.html">Construção</a></h3>
             </div>
         </div>
 
         <div class="iconis">
-            <img src="../tcc/imagens.img/faxina.png" alt="">
+            <img src="../tcc/imagens.img/limpeza.png" alt="">
             <div class="infor">
                 <h3><a href="login.html">Limpeza</a></h3>
             </div>
         </div>
 
         <div class="iconis">
-            <img src="../tcc/imagens.img/carro.png" alt="">
+            <img src="../tcc/imagens.img/mecanica.png" alt="">
             <div class="infor">
                 <h3><a href="login.html">Mecânica</a></h3>
             </div>
         </div>
 
         <div class="iconis">
-            <img src="../tcc/imagens.img/bolo.png" alt="">
+            <img src="../tcc/imagens.img/confeitaria.png" alt="">
             <div class="infor">
                 <h3><a href="login.html">Confeitaria</a></h3>
             </div>
         </div>
 
         <div class="iconis">
-            <img src="../tcc/imagens.img/make.png" alt="">
+            <img src="../tcc/imagens.img/beleza.png" alt="">
             <div class="infor">
                 <h3><a href="login.html">Beleza</a></h3>
             </div>
