@@ -1,3 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="busca.css">
+    <title>Document</title>
+</head>
+<body>
+     <!--------------------------------INICIO MENU-------------------->
+     <header>
+     
+      <input type="checkbox" name="" id="risquinhos">
+        <label for="risquinhos" class="fas fa-bars"></label>
+        <a href="index.php" class="logo">AGAMA<span>.</span></a>
+       
+        <h1 class="cs" >Busca por Serviços</h1>
+        <nav class="navbar">
+        <a href="consulta-servicos.php">voltar</a>
+      </nav>
+      
+      <div class="icons">
+
+        <a href="login.html" class="fas fa-user"></a>
+      </div>
+    </header>
+    <!-- ----------------------FIM MENU----------------------------------->
 <?php
 // Inclua o arquivo de conexão
 include 'conexao.php';
@@ -52,3 +79,5 @@ if (isset($_GET['query'])) {
     $con->close();
 }
 ?>
+</body>
+</html>
