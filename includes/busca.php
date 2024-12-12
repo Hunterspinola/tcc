@@ -16,7 +16,7 @@
        
         <h1 class="cs" >Busca por Serviços</h1>
         <nav class="navbar">
-        <a href="consulta-servicos.php">voltar</a>
+        <a href="../consulta-servicos.php">voltar</a>
       </nav>
       
       <div class="icons">
